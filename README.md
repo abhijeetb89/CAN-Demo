@@ -18,6 +18,7 @@ Each of these CAN nodes sends and receives CAN messages as defined in can_databa
 which is at 20_Requirements folder.
 
 Sensors connected to nodes - 
+
 1. Accelerometer - detect crash 
 
 2. Light Sensor - measure ambient light 
