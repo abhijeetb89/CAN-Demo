@@ -17,12 +17,14 @@ Each of these CAN nodes sends and receives CAN messages as defined in can_databa
 which is at 20_Requirements folder.
 
 Sensors connected to nodes - 
-1. Accelerometer - detect crash
-2. Light Sensor - measure ambient light
-3. Temperature Sensor - measure temperature inside vehicle
-4. Roraty POT - measures speed
-5. Ultrasonic Sensor - detect obstacle while parking
+1. Accelerometer - detect crash 
+2. Light Sensor - measure ambient light 
+3. Temperature Sensor - measure temperature inside vehicle 
+4. Roraty POT - measures speed 
+5. Ultrasonic Sensor - detect obstacle while parking 
 
 Using push buttons interior and exterior lights of vehicle are controlled.
     
-
+To observe messages sent by node, STM32F4 Discovery Board is connected to PC via USB. This board reads
+all messages on CAN and sends it over USB. Windows based software reads these messages and displays
+on GUI. Trace can be stored.
