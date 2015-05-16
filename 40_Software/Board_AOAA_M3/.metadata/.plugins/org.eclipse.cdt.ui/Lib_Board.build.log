@@ -1,0 +1,74 @@
+12:08:45 **** Build of configuration Debug for project Lib_Board ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+Finished building: ../src/board.c
+ 
+Building file: ../src/btn.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/btn.d" -MT"src/btn.o" -MT"src/btn.d" -o "src/btn.o" "../src/btn.c"
+Finished building: ../src/btn.c
+ 
+Building file: ../src/canpt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/canpt.d" -MT"src/canpt.o" -MT"src/canpt.d" -o "src/canpt.o" "../src/canpt.c"
+Finished building: ../src/canpt.c
+ 
+Building file: ../src/eadebug.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/eadebug.d" -MT"src/eadebug.o" -MT"src/eadebug.d" -o "src/eadebug.o" "../src/eadebug.c"
+Finished building: ../src/eadebug.c
+ 
+Building file: ../src/eeprom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.o" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+Finished building: ../src/eeprom.c
+ 
+Building file: ../src/rfpt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/rfpt.d" -MT"src/rfpt.o" -MT"src/rfpt.d" -o "src/rfpt.o" "../src/rfpt.c"
+../src/rfpt.c: In function 'handlePublish':
+../src/rfpt.c:342:14: warning: variable 't' set but not used [-Wunused-but-set-variable]
+     uint32_t t = 0;
+              ^
+Finished building: ../src/rfpt.c
+ 
+Building file: ../src/rgb.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/rgb.d" -MT"src/rgb.o" -MT"src/rgb.d" -o "src/rgb.o" "../src/rgb.c"
+Finished building: ../src/rgb.c
+ 
+Building file: ../src/time.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/time.d" -MT"src/time.o" -MT"src/time.d" -o "src/time.o" "../src/time.c"
+Finished building: ../src/time.c
+ 
+Building file: ../src/xbee.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/xbee.d" -MT"src/xbee.o" -MT"src/xbee.d" -o "src/xbee.o" "../src/xbee.c"
+Finished building: ../src/xbee.c
+ 
+Building target: libLib_Board.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLib_Board.a"  ./src/board.o ./src/btn.o ./src/canpt.o ./src/eadebug.o ./src/eeprom.o ./src/rfpt.o ./src/rgb.o ./src/time.o ./src/xbee.o   
+c:\nxp\LPCXpresso_7.5.0_254\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_Board.a
+Finished building target: libLib_Board.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libLib_Board.a ; # arm-none-eabi-objdump -h -S libLib_Board.a >libLib_Board.lss
+   text	   data	    bss	    dec	    hex	filename
+   1188	      0	    516	   1704	    6a8	board.o (ex libLib_Board.a)
+     96	      0	      0	     96	     60	btn.o (ex libLib_Board.a)
+   2772	      0	    364	   3136	    c40	canpt.o (ex libLib_Board.a)
+      0	      0	      0	      0	      0	eadebug.o (ex libLib_Board.a)
+    920	      8	      4	    932	    3a4	eeprom.o (ex libLib_Board.a)
+   5152	     16	    736	   5904	   1710	rfpt.o (ex libLib_Board.a)
+    332	      0	      0	    332	    14c	rgb.o (ex libLib_Board.a)
+    192	      0	      4	    196	     c4	time.o (ex libLib_Board.a)
+   3788	      1	    224	   4013	    fad	xbee.o (ex libLib_Board.a)
+ 
+
+12:08:47 Build Finished (took 2s.64ms)
+

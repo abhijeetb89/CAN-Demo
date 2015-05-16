@@ -1,0 +1,58 @@
+12:10:49 **** Incremental Build of configuration Debug for project Lib_CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+12:10:49 **** Build of configuration Debug for project Lib_FreeRTOS ****
+make -r all 
+Building file: ../portable/heap_2.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"portable/heap_2.d" -MT"portable/heap_2.o" -MT"portable/heap_2.d" -o "portable/heap_2.o" "../portable/heap_2.c"
+Finished building: ../portable/heap_2.c
+ 
+Building file: ../portable/port.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"portable/port.d" -MT"portable/port.o" -MT"portable/port.d" -o "portable/port.o" "../portable/port.c"
+Finished building: ../portable/port.c
+ 
+Building file: ../demo_code/basic_io.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"demo_code/basic_io.d" -MT"demo_code/basic_io.o" -MT"demo_code/basic_io.d" -o "demo_code/basic_io.o" "../demo_code/basic_io.c"
+Finished building: ../demo_code/basic_io.c
+ 
+Building file: ../demo_code/consoleprint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"demo_code/consoleprint.d" -MT"demo_code/consoleprint.o" -MT"demo_code/consoleprint.d" -o "demo_code/consoleprint.o" "../demo_code/consoleprint.c"
+Finished building: ../demo_code/consoleprint.c
+ 
+Building file: ../list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"list.d" -MT"list.o" -MT"list.d" -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building file: ../queue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"queue.d" -MT"queue.o" -MT"queue.d" -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../tasks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"tasks.d" -MT"tasks.o" -MT"tasks.d" -o "tasks.o" "../tasks.c"
+Finished building: ../tasks.c
+ 
+Building target: libLib_FreeRTOS.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLib_FreeRTOS.a"  ./portable/heap_2.o ./portable/port.o  ./demo_code/basic_io.o ./demo_code/consoleprint.o  ./list.o ./queue.o ./tasks.o   
+c:\nxp\LPCXpresso_7.5.0_254\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_FreeRTOS.a
+Finished building target: libLib_FreeRTOS.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libLib_FreeRTOS.a ; # arm-none-eabi-objdump -h -S libLib_FreeRTOS.a >libLib_FreeRTOS.lss
+   text	   data	    bss	    dec	    hex	filename
+    272	      4	   2072	   2348	    92c	heap_2.o (ex libLib_FreeRTOS.a)
+    304	      4	      0	    308	    134	port.o (ex libLib_FreeRTOS.a)
+     88	      0	     52	    140	     8c	basic_io.o (ex libLib_FreeRTOS.a)
+     20	      0	      0	     20	     14	consoleprint.o (ex libLib_FreeRTOS.a)
+    156	      0	      0	    156	     9c	list.o (ex libLib_FreeRTOS.a)
+   1176	      0	      0	   1176	    498	queue.o (ex libLib_FreeRTOS.a)
+   2588	      0	    256	   2844	    b1c	tasks.o (ex libLib_FreeRTOS.a)
+ 

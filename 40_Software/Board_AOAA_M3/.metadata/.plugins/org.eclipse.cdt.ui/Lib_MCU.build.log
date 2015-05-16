@@ -1,0 +1,162 @@
+12:08:40 **** Build of configuration Debug for project Lib_MCU ****
+make -r all 
+Building file: ../src/lpc17xx_adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_adc.d" -MT"src/lpc17xx_adc.o" -MT"src/lpc17xx_adc.d" -o "src/lpc17xx_adc.o" "../src/lpc17xx_adc.c"
+Finished building: ../src/lpc17xx_adc.c
+ 
+Building file: ../src/lpc17xx_can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_can.d" -MT"src/lpc17xx_can.o" -MT"src/lpc17xx_can.d" -o "src/lpc17xx_can.o" "../src/lpc17xx_can.c"
+../src/lpc17xx_can.c: In function 'CAN_Init':
+../src/lpc17xx_can.c:177:11: warning: variable 'temp' set but not used [-Wunused-but-set-variable]
+  uint32_t temp;
+           ^
+Finished building: ../src/lpc17xx_can.c
+ 
+Building file: ../src/lpc17xx_clkpwr.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_clkpwr.d" -MT"src/lpc17xx_clkpwr.o" -MT"src/lpc17xx_clkpwr.d" -o "src/lpc17xx_clkpwr.o" "../src/lpc17xx_clkpwr.c"
+Finished building: ../src/lpc17xx_clkpwr.c
+ 
+Building file: ../src/lpc17xx_dac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_dac.d" -MT"src/lpc17xx_dac.o" -MT"src/lpc17xx_dac.d" -o "src/lpc17xx_dac.o" "../src/lpc17xx_dac.c"
+Finished building: ../src/lpc17xx_dac.c
+ 
+Building file: ../src/lpc17xx_emac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_emac.d" -MT"src/lpc17xx_emac.o" -MT"src/lpc17xx_emac.d" -o "src/lpc17xx_emac.o" "../src/lpc17xx_emac.c"
+Finished building: ../src/lpc17xx_emac.c
+ 
+Building file: ../src/lpc17xx_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_gpio.d" -MT"src/lpc17xx_gpio.o" -MT"src/lpc17xx_gpio.d" -o "src/lpc17xx_gpio.o" "../src/lpc17xx_gpio.c"
+Finished building: ../src/lpc17xx_gpio.c
+ 
+Building file: ../src/lpc17xx_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_i2c.d" -MT"src/lpc17xx_i2c.o" -MT"src/lpc17xx_i2c.d" -o "src/lpc17xx_i2c.o" "../src/lpc17xx_i2c.c"
+Finished building: ../src/lpc17xx_i2c.c
+ 
+Building file: ../src/lpc17xx_i2s.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_i2s.d" -MT"src/lpc17xx_i2s.o" -MT"src/lpc17xx_i2s.d" -o "src/lpc17xx_i2s.o" "../src/lpc17xx_i2s.c"
+Finished building: ../src/lpc17xx_i2s.c
+ 
+Building file: ../src/lpc17xx_libcfg_default.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_libcfg_default.d" -MT"src/lpc17xx_libcfg_default.o" -MT"src/lpc17xx_libcfg_default.d" -o "src/lpc17xx_libcfg_default.o" "../src/lpc17xx_libcfg_default.c"
+Finished building: ../src/lpc17xx_libcfg_default.c
+ 
+Building file: ../src/lpc17xx_mcpwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_mcpwm.d" -MT"src/lpc17xx_mcpwm.o" -MT"src/lpc17xx_mcpwm.d" -o "src/lpc17xx_mcpwm.o" "../src/lpc17xx_mcpwm.c"
+Finished building: ../src/lpc17xx_mcpwm.c
+ 
+Building file: ../src/lpc17xx_nvic.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_nvic.d" -MT"src/lpc17xx_nvic.o" -MT"src/lpc17xx_nvic.d" -o "src/lpc17xx_nvic.o" "../src/lpc17xx_nvic.c"
+Finished building: ../src/lpc17xx_nvic.c
+ 
+Building file: ../src/lpc17xx_pinsel.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_pinsel.d" -MT"src/lpc17xx_pinsel.o" -MT"src/lpc17xx_pinsel.d" -o "src/lpc17xx_pinsel.o" "../src/lpc17xx_pinsel.c"
+Finished building: ../src/lpc17xx_pinsel.c
+ 
+Building file: ../src/lpc17xx_pwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_pwm.d" -MT"src/lpc17xx_pwm.o" -MT"src/lpc17xx_pwm.d" -o "src/lpc17xx_pwm.o" "../src/lpc17xx_pwm.c"
+Finished building: ../src/lpc17xx_pwm.c
+ 
+Building file: ../src/lpc17xx_qei.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_qei.d" -MT"src/lpc17xx_qei.o" -MT"src/lpc17xx_qei.d" -o "src/lpc17xx_qei.o" "../src/lpc17xx_qei.c"
+Finished building: ../src/lpc17xx_qei.c
+ 
+Building file: ../src/lpc17xx_rit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_rit.d" -MT"src/lpc17xx_rit.o" -MT"src/lpc17xx_rit.d" -o "src/lpc17xx_rit.o" "../src/lpc17xx_rit.c"
+Finished building: ../src/lpc17xx_rit.c
+ 
+Building file: ../src/lpc17xx_rtc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_rtc.d" -MT"src/lpc17xx_rtc.o" -MT"src/lpc17xx_rtc.d" -o "src/lpc17xx_rtc.o" "../src/lpc17xx_rtc.c"
+Finished building: ../src/lpc17xx_rtc.c
+ 
+Building file: ../src/lpc17xx_spi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_spi.d" -MT"src/lpc17xx_spi.o" -MT"src/lpc17xx_spi.d" -o "src/lpc17xx_spi.o" "../src/lpc17xx_spi.c"
+Finished building: ../src/lpc17xx_spi.c
+ 
+Building file: ../src/lpc17xx_ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_ssp.d" -MT"src/lpc17xx_ssp.o" -MT"src/lpc17xx_ssp.d" -o "src/lpc17xx_ssp.o" "../src/lpc17xx_ssp.c"
+Finished building: ../src/lpc17xx_ssp.c
+ 
+Building file: ../src/lpc17xx_timer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_timer.d" -MT"src/lpc17xx_timer.o" -MT"src/lpc17xx_timer.d" -o "src/lpc17xx_timer.o" "../src/lpc17xx_timer.c"
+../src/lpc17xx_timer.c: In function 'TIM_Init':
+../src/lpc17xx_timer.c:244:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+../src/lpc17xx_timer.c: In function 'TIM_ConfigMatch':
+../src/lpc17xx_timer.c:389:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+../src/lpc17xx_timer.c: In function 'TIM_ConfigCapture':
+../src/lpc17xx_timer.c:436:11: warning: variable 'timer' set but not used [-Wunused-but-set-variable]
+  uint32_t timer;
+           ^
+Finished building: ../src/lpc17xx_timer.c
+ 
+Building file: ../src/lpc17xx_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_uart.d" -MT"src/lpc17xx_uart.o" -MT"src/lpc17xx_uart.d" -o "src/lpc17xx_uart.o" "../src/lpc17xx_uart.c"
+../src/lpc17xx_uart.c: In function 'UART_SendString':
+../src/lpc17xx_uart.c:1394:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  return UART_Send(UARTx, txbuf, strlen(txbuf), BLOCKING);
+  ^
+Finished building: ../src/lpc17xx_uart.c
+ 
+Building file: ../src/lpc17xx_wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lpc17xx_wdt.d" -MT"src/lpc17xx_wdt.o" -MT"src/lpc17xx_wdt.d" -o "src/lpc17xx_wdt.o" "../src/lpc17xx_wdt.c"
+Finished building: ../src/lpc17xx_wdt.c
+ 
+Building target: libLib_MCU.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLib_MCU.a"  ./src/lpc17xx_adc.o ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.o ./src/lpc17xx_emac.o ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.o ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.o ./src/lpc17xx_timer.o ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.o   
+c:\nxp\LPCXpresso_7.5.0_254\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_MCU.a
+Finished building target: libLib_MCU.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1216	      0	      0	   1216	    4c0	lpc17xx_adc.o (ex libLib_MCU.a)
+  10288	     16	     60	  10364	   287c	lpc17xx_can.o (ex libLib_MCU.a)
+    540	      0	      0	    540	    21c	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    376	      0	      0	    376	    178	lpc17xx_dac.o (ex libLib_MCU.a)
+   3000	      0	     44	   3044	    be4	lpc17xx_emac.o (ex libLib_MCU.a)
+   1588	      0	      0	   1588	    634	lpc17xx_gpio.o (ex libLib_MCU.a)
+   4476	      0	     36	   4512	   11a0	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2876	      0	      8	   2884	    b44	lpc17xx_i2s.o (ex libLib_MCU.a)
+     12	      0	      0	     12	      c	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1776	      0	      0	   1776	    6f0	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    240	      0	      0	    240	     f0	lpc17xx_nvic.o (ex libLib_MCU.a)
+    572	      0	      0	    572	    23c	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2540	      0	      0	   2540	    9ec	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2124	      0	      0	   2124	    84c	lpc17xx_qei.o (ex libLib_MCU.a)
+    632	      0	      0	    632	    278	lpc17xx_rit.o (ex libLib_MCU.a)
+   3904	      0	      0	   3904	    f40	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1692	      0	     12	   1704	    6a8	lpc17xx_spi.o (ex libLib_MCU.a)
+   3504	      0	     24	   3528	    dc8	lpc17xx_ssp.o (ex libLib_MCU.a)
+   2588	      0	      0	   2588	    a1c	lpc17xx_timer.o (ex libLib_MCU.a)
+   5780	      0	     68	   5848	   16d8	lpc17xx_uart.o (ex libLib_MCU.a)
+    700	      0	      0	    700	    2bc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+
+12:08:44 Build Finished (took 4s.558ms)
+
