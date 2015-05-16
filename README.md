@@ -5,7 +5,8 @@ Four microcontrollers have been used as CAN nodes.
 1.STM32F407VGT6 (Present on STM32F4 Discovery Board)
 http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF252419
 
-2.STM32F091RC6 (Present on STM32 Nucleo-F091 Board)
+2.STM32F091RC6 (Present on STM32 Nucleo-F091 Board) 
+
 https://developer.mbed.org/platforms/ST-Nucleo-F091RC/
 
 3.LPC1768 (Present on Android Open Accessory Application Kit)
@@ -30,7 +31,14 @@ Sensors connected to nodes -
 5. Ultrasonic Sensor - detect obstacle while parking 
 
 Using push buttons interior and exterior lights of vehicle are controlled.
+
+Using servo motor, wiper is simulated.
     
 To observe messages sent by node, STM32F4 Discovery Board is connected to PC via USB. This board reads
 all messages on CAN and sends it over USB. Windows based software reads these messages and displays
 on GUI. Trace can be stored.
+
+Please note that this CAN was developed using whichever components were available. The network in vehicle
+is very different than what we have designed. We wanted to create four CAN ECUs exactly similar to those
+used in cars - for example, Dashboard, BCM, PCM, Door Control Unit, etc. But it was not possible due to 
+lack of components.
