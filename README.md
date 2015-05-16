@@ -1,13 +1,28 @@
-# CAN_HS-LS_GW
-CAN High Speed (500kbps) to Low Speed Gateway(125kbps)
+Aim of this project is to develop small demo or prototype for CAN similar to CAN in vehicle.
 
-Project Outline - 
-There are three development boards acting as a CAN node on CAN network
-1.STM32F4 Discovery (Gateway - 500kbps and 125kbps)
-2.STM32 Nucleo (125kbps)
-3.AOAA Kit (500kbps)
+Four microcontrollers have been used as CAN nodes.
+1. STM32F407VGT6 (Present on STM32F4 Discovery Board)
+http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF252419
 
-Some sensors are connected on each node.
-   
+2. STM32F091RC6 (Present on STM32 Nucleo-F091 Board)
+https://developer.mbed.org/platforms/ST-Nucleo-F091RC/
+
+3. LPC1768 (Present on Android Open Accessory Application Kit)
+http://www.embeddedartists.com/products/app/aoa_kit.php
+
+4. LPC11C24 Present on Android Open Accessory Application Kit)
+http://www.embeddedartists.com/products/app/aoa_kit.php
+
+Each of these CAN nodes sends and receives CAN messages as defined in can_database.xls file 
+which is at 20_Requirements folder.
+
+Sensors connected to nodes - 
+1. Accelerometer - detect crash
+2. Light Sensor - measure ambient light
+3. Temperature Sensor - measure temperature inside vehicle
+4. Roraty POT - measures speed
+5. Ultrasonic Sensor - detect obstacle while parking
+
+Using push buttons interior and exterior lights of vehicle are controlled.
     
 
