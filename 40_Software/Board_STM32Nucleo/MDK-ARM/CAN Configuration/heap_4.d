@@ -1,0 +1,12 @@
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
+can configuration\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h
+can configuration\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+can configuration\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+can configuration\heap_4.o: ..\Inc\FreeRTOSConfig.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h
+can configuration\heap_4.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h
