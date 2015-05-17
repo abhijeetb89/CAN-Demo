@@ -454,7 +454,7 @@ void vTask_ControlLamps(void *parameters)
 		if(hcan1.pRxMsg->StdId==MSG_INT_EXT_LIGHT)
 		{	
 				/* For high beam */
-			if(hcan1.pRxMsg->Data[0] == SIGNAL_HIGH_BEAM){
+			if(hcan1.pRxMsg->Data[0] & SIGNAL_HIGH_BEAM){
 				HAL_GPIO_WritePin(GPIOD, LAMP_HIGH_BEAM, GPIO_PIN_SET);
 			}
 			else{
