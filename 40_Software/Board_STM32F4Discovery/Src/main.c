@@ -38,7 +38,7 @@
 #include "usb_host.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "can_dbc.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -50,7 +50,23 @@ CAN_HandleTypeDef hcan2;
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN PV */
-#define STACK_SIZE 500
+
+#define LAMP_HIGH_BEAM			 		GPIO_PIN_12
+#define LAMP_LOW_BEAM				 		GPIO_PIN_13
+#define LAMP_TURN_RIGHT			 		GPIO_PIN_14
+#define LAMP_TURN_LEFT			 		GPIO_PIN_15
+#define LAMP_MARKER							GPIO_PIN_8
+#define LAMP_DRL								GPIO_PIN_9
+#define LAMP_EMERGENCY_STOP			GPIO_PIN_10	
+#define LAMP_FRONT_FOG					GPIO_PIN_11
+#define LAMP_REAR_FOG						GPIO_PIN_3
+#define LAMP_TAIL								GPIO_PIN_4
+#define LAMP_BRAKE							GPIO_PIN_5
+#define LAMP_DOME								GPIO_PIN_6
+
+
+#define STACK_SIZE  1024
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -63,8 +79,9 @@ static void MX_CDC_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-void vTask_SetLeds(void *parameters);
+void vTask_ControlLamps(void *parameters);
 void vTask_SendDataToPc(void *parameters);
+
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -75,7 +92,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+		
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -118,11 +135,15 @@ int main(void)
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 	
-	xTaskCreate( vTask_SetLeds, "SetLeds", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
+	/* Task reads the message MSG_INT_EXT_LIGHT and sets interior and exterior lamps accordingly */
+	xTaskCreate( vTask_ControlLamps, "SetLeds", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
                NULL );
 							 
-	xTaskCreate( vTask_SendDataToPc, "SendDataToPc", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
-               NULL );						 
+	
+							 
+	/* Task sends CAN messages received by the board as well as send by board to PC via USB  */						 
+	//xTaskCreate( vTask_SendDataToPc, "SendDataToPc", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
+  //             NULL );						 
 	
   /* USER CODE END RTOS_THREADS */
 
@@ -419,41 +440,115 @@ void MX_CDC_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void vTask_SetLeds(void *parameters)
+/*
+Task: 			 vTask_ControlLamps	
+Parameters:  void
+Return: 		 void
+Description: This FreeRTOS thread reads message MSG_INT_EXT_LIGHT(0x350) and sets corresponding lamps on or off accordingly
+*/
+void vTask_ControlLamps(void *parameters)
 {
 			
-	for(;;)
+	for(;;)	//run task continuously
 	{
-		if(hcan1.pRxMsg->StdId==0x500)
+		if(hcan1.pRxMsg->StdId==MSG_INT_EXT_LIGHT)
 		{	
-			if(hcan1.pRxMsg->Data[0]){
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+				/* For high beam */
+			if(hcan1.pRxMsg->Data[0] == SIGNAL_HIGH_BEAM){
+				HAL_GPIO_WritePin(GPIOD, LAMP_HIGH_BEAM, GPIO_PIN_SET);
 			}
 			else{
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(GPIOD, LAMP_HIGH_BEAM, GPIO_PIN_RESET);
 			}
 				
-			if(hcan1.pRxMsg->Data[1]){
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+			/* For low beam */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_LOW_BEAM)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_LOW_BEAM, GPIO_PIN_SET);
 			}
 			else{
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(GPIOD, LAMP_LOW_BEAM, GPIO_PIN_RESET);
 			}
 			
-			if(hcan1.pRxMsg->Data[2]){
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+			/* For left turn indicator */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_LEFT_TURN_INDICATOR)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_TURN_LEFT, GPIO_PIN_SET);
 			}
 			else{
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(GPIOD, LAMP_TURN_LEFT, GPIO_PIN_RESET);
 			}
 			
-			if(hcan1.pRxMsg->Data[3]){
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
+			/* For right turn indicator */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_RIGHT_TURN_INDICATOR)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_TURN_RIGHT, GPIO_PIN_SET);
 			}
 			else{
-				HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(GPIOD, LAMP_TURN_RIGHT, GPIO_PIN_RESET);
 			}
 			
+			/* For marker light */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_MARKER_LIGHT)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_MARKER, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_MARKER, GPIO_PIN_RESET);
+			}
+			
+			/* For DRL */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_DRL)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_DRL, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_DRL, GPIO_PIN_RESET);
+			}
+			
+			/* For emergency stop */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_EMERGENCY_STOP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_EMERGENCY_STOP, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_EMERGENCY_STOP, GPIO_PIN_RESET);
+			}
+			
+			/* For front fog lamp */
+			if((hcan1.pRxMsg->Data[0] & SIGNAL_FRONT_FOG_LAMP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_FRONT_FOG, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_FRONT_FOG, GPIO_PIN_RESET);
+			}
+			
+			/* For rear fog lamp */
+			if((hcan1.pRxMsg->Data[1] & SIGNAL_REAR_FOG_LAMP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_REAR_FOG, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_REAR_FOG, GPIO_PIN_RESET);
+			}
+			
+			/* For tail lamp */
+			if((hcan1.pRxMsg->Data[1] & SIGNAL_TAIL_LAMP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_TAIL, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_TAIL, GPIO_PIN_RESET);
+			}
+			
+			/* For brake lamp */
+			if((hcan1.pRxMsg->Data[1] & SIGNAL_BRAKE_LAMP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_BRAKE, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_BRAKE, GPIO_PIN_RESET);
+			}
+			
+			/* For dome lamp */
+			if((hcan1.pRxMsg->Data[1] & SIGNAL_DOME_LAMP)){
+				HAL_GPIO_WritePin(GPIOD, LAMP_DOME, GPIO_PIN_SET);
+			}
+			else{
+				HAL_GPIO_WritePin(GPIOD, LAMP_DOME, GPIO_PIN_RESET);
+			}
+				
 		}
 	
 	}
@@ -462,12 +557,14 @@ void vTask_SetLeds(void *parameters)
 
 void vTask_SendDataToPc(void *parameters)
 {
+	/*
 	USBH_HandleTypeDef phost;
 	
 	for(;;)
 	{
 		USBH_CDC_Transmit(, uint8_t *pbuff, uint32_t length);
 	}
+	*/
 
 }
 
@@ -518,3 +615,4 @@ void assert_failed(uint8_t* file, uint32_t line)
 */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

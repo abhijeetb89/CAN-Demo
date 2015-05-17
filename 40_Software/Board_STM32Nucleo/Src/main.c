@@ -37,7 +37,7 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "can_dbc.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -48,7 +48,24 @@ CAN_HandleTypeDef hcan;
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN PV */
+#define STACK_SIZE 	1024
+#define PRIORITY_SEND_CANMSG_LAMPS							(tskIDLE_PRIORITY + 2U)
+#define PRIORITY_READ_USER_COMMAND							(tskIDLE_PRIORITY + 1U)
 
+#define SWITCH_HIGH_BEAM			 		GPIO_PIN_13
+#define SWITCH_LOW_BEAM				 		GPIO_PIN_1
+#define SWITCH_TURN_RIGHT			 		GPIO_PIN_2
+#define SWITCH_TURN_LEFT			 		GPIO_PIN_3
+#define SWITCH_MARKER							GPIO_PIN_4
+#define SWITCH_DRL								GPIO_PIN_5
+#define SWITCH_EMERGENCY_STOP			GPIO_PIN_6	
+#define SWITCH_FRONT_FOG					GPIO_PIN_7
+#define SWITCH_REAR_FOG						GPIO_PIN_8
+#define SWITCH_TAIL								GPIO_PIN_9
+#define SWITCH_BRAKE							GPIO_PIN_10
+#define SWITCH_DOME								GPIO_PIN_11
+
+struct_Msg_Init_Ext_Light msg_Init_Ext_Light;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -59,7 +76,8 @@ static void MX_CAN_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-
+void vTask_SendCanMsg_Lamps(void *parameters);
+void vTask_ReadUserCommand(void *parameters);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -109,7 +127,13 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
+	/* Task sends the message MSG_INT_EXT_LIGHT */
+	xTaskCreate( vTask_SendCanMsg_Lamps, "SendLampMsg", STACK_SIZE, NULL, 2, NULL );
+							 
+	/* Task reads input from user */
+	xTaskCreate( vTask_ReadUserCommand, "ReadUserCommand", STACK_SIZE, NULL, 0, NULL );
+							 
+	/* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
@@ -200,12 +224,16 @@ void MX_ADC_Init(void)
 void MX_CAN_Init(void)
 {
 
-  hcan.Instance = CAN;
-  hcan.Init.Prescaler = 16;
+  static CanTxMsgTypeDef TxMessage;
+	
+	hcan.Instance = CAN;
+  hcan.pTxMsg = &TxMessage;
+	
+	hcan.Init.Prescaler = 2;
   hcan.Init.Mode = CAN_MODE_NORMAL;
   hcan.Init.SJW = CAN_SJW_1TQ;
-  hcan.Init.BS1 = CAN_BS1_1TQ;
-  hcan.Init.BS2 = CAN_BS2_1TQ;
+  hcan.Init.BS1 = CAN_BS1_9TQ;
+  hcan.Init.BS2 = CAN_BS2_2TQ;
   hcan.Init.TTCM = DISABLE;
   hcan.Init.ABOM = DISABLE;
   hcan.Init.AWUM = DISABLE;
@@ -213,7 +241,7 @@ void MX_CAN_Init(void)
   hcan.Init.RFLM = DISABLE;
   hcan.Init.TXFP = DISABLE;
   HAL_CAN_Init(&hcan);
-
+	
 }
 
 /** Configure pins as 
@@ -240,7 +268,73 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
+	
+	/*Configure GPIO pin : PC01 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC02 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+ /*Configure GPIO pin : PC03 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC04 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC05 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC06 */
+  GPIO_InitStruct.Pin = GPIO_PIN_6;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC07 */
+  GPIO_InitStruct.Pin = GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC08 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC09 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PC11 */
+  GPIO_InitStruct.Pin = GPIO_PIN_11;
+  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
   /*Configure GPIO pins : PA2 PA3 */
   GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -259,13 +353,97 @@ void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void vTask_ReadUserCommand(void *parameters)
+{
+	for(;;)
+	{
+		
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_HIGH_BEAM))?(msg_Init_Ext_Light.signal_high_beam = 0)
+																														 :(msg_Init_Ext_Light.signal_high_beam = 1);
+	
+	
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_LOW_BEAM))?(msg_Init_Ext_Light.signal_low_beam  = 0)
+																														:(msg_Init_Ext_Light.signal_low_beam = 1);
+	
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_TURN_RIGHT))?(msg_Init_Ext_Light.signal_right_turn_indicator = 0)
+																															:(msg_Init_Ext_Light.signal_right_turn_indicator = 1);
+		
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_TURN_LEFT))?(msg_Init_Ext_Light.signal_left_turn_indicator = 0)
+																														 :(msg_Init_Ext_Light.signal_left_turn_indicator = 1);
+		
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_MARKER))?(msg_Init_Ext_Light.signal_marker_light = 0)
+																													:(msg_Init_Ext_Light.signal_marker_light = 1);
+	
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_DRL))?(msg_Init_Ext_Light.signal_drl = 0)
+																											 :(msg_Init_Ext_Light.signal_drl = 1);
 
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_EMERGENCY_STOP))?(msg_Init_Ext_Light.signal_emergency_stop = 0)
+																																	:(msg_Init_Ext_Light.signal_emergency_stop = 1);
+		
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_FRONT_FOG))?(msg_Init_Ext_Light.signal_front_fog_lamp = 0)
+																														 :(msg_Init_Ext_Light.signal_front_fog_lamp = 1);
+
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_REAR_FOG))?(msg_Init_Ext_Light.signal_rear_fog_lamp = 0)
+																														:(msg_Init_Ext_Light.signal_rear_fog_lamp = 1);
+	
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_TAIL))?(msg_Init_Ext_Light.signal_tail_lamp = 0)
+																												:(msg_Init_Ext_Light.signal_tail_lamp = 1);
+
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_BRAKE))?(msg_Init_Ext_Light.signal_brake_lamp = 0)
+																												 :(msg_Init_Ext_Light.signal_brake_lamp = 1);
+		
+	(GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOC, SWITCH_DOME))?(msg_Init_Ext_Light.signal_dome_lamp = 0)
+																												:(msg_Init_Ext_Light.signal_dome_lamp = 1);
+																												
+	
+		
+	}
+
+}
+
+void vTask_SendCanMsg_Lamps(void *parameters)
+{
+	
+	
+	msg_Init_Ext_Light.id  = ID_INT_EXT_LIGHT;
+	msg_Init_Ext_Light.dlc = DLC_INT_EXT_LIGHT;
+	msg_Init_Ext_Light.cycle_time = 100;
+	
+	for(;;)
+	{
+		hcan.pTxMsg->StdId  = msg_Init_Ext_Light.id;
+		hcan.pTxMsg->DLC    = msg_Init_Ext_Light.dlc;
+		hcan.pTxMsg->IDE    = CAN_RTR_DATA;
+		hcan.pTxMsg->RTR    = CAN_ID_STD;
+		
+		
+		hcan.pTxMsg->Data[0]= (msg_Init_Ext_Light.signal_high_beam << SIGNAL_HIGH_BEAM)|						
+													(msg_Init_Ext_Light.signal_low_beam << SIGNAL_LOW_BEAM)|								
+													(msg_Init_Ext_Light.signal_left_turn_indicator << SIGNAL_LEFT_TURN_INDICATOR)|	
+													(msg_Init_Ext_Light.signal_right_turn_indicator << SIGNAL_RIGHT_TURN_INDICATOR)|		
+													(msg_Init_Ext_Light.signal_marker_light << SIGNAL_MARKER_LIGHT)|						
+													(msg_Init_Ext_Light.signal_drl << SIGNAL_DRL)|		
+													(msg_Init_Ext_Light.signal_emergency_stop << SIGNAL_EMERGENCY_STOP)|		
+													(msg_Init_Ext_Light.signal_front_fog_lamp << SIGNAL_FRONT_FOG_LAMP);
+		
+		hcan.pTxMsg->Data[1]= (msg_Init_Ext_Light.signal_rear_fog_lamp << SIGNAL_REAR_FOG_LAMP)|				
+													(msg_Init_Ext_Light.signal_tail_lamp << SIGNAL_TAIL_LAMP)|									
+													(msg_Init_Ext_Light.signal_brake_lamp << SIGNAL_BRAKE_LAMP)|									
+													(msg_Init_Ext_Light.signal_dome_lamp << SIGNAL_DOME_LAMP);
+		
+		
+		HAL_CAN_Transmit(&hcan, 10);
+		
+		vTaskDelay(msg_Init_Ext_Light.cycle_time);	/* wait for 100mS and send the message again*/
+	  
+	}
+
+}
 /* USER CODE END 4 */
 
 /* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
 {
-
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)

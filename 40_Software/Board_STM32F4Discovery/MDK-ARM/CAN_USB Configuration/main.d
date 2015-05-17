@@ -45,3 +45,4 @@ can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h
 can_usb configuration\main.o: ..\Inc\usb_host.h
+can_usb configuration\main.o: ..\Inc\can_dbc.h

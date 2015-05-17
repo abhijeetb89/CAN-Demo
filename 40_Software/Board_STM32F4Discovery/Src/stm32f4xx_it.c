@@ -90,10 +90,13 @@ void OTG_FS_IRQHandler(void)
 
 void CAN1_RX0_IRQHandler(void)
 {
+			/* Store ID */
 			hcan1.pRxMsg->StdId = ((CAN1->sFIFOMailBox[0].RIR) & (0xFFE00000))>> 21;
-	
+			
+			/* Store DLC */
 	    hcan1.pRxMsg->DLC = (CAN1->sFIFOMailBox[0].RDTR & (0xF));
-	
+			
+			/* Store Data Bytes */
 			hcan1.pRxMsg->Data[0] = (CAN1->sFIFOMailBox[0].RDLR & 0x000000FF);
 	    hcan1.pRxMsg->Data[1] = (CAN1->sFIFOMailBox[0].RDLR & 0x0000FF00)>>8;
 	    hcan1.pRxMsg->Data[2] = (CAN1->sFIFOMailBox[0].RDLR & 0x00FF0000)>>16;
@@ -103,8 +106,10 @@ void CAN1_RX0_IRQHandler(void)
 	    hcan1.pRxMsg->Data[6] = (CAN1->sFIFOMailBox[0].RDHR & 0x00FF0000)>>16;
 	    hcan1.pRxMsg->Data[7] = (CAN1->sFIFOMailBox[0].RDHR & 0xFF00000)>>24;
 	
+			/* Store time of reception of message */
 	    hcan1.pRxMsg->RxTime = (CAN1->sFIFOMailBox[0].RDTR & 0xFFFF0000) >> 16;
 	    
+			/* Clear buffer */
 		  CAN1->RF0R |= CAN_RF0R_RFOM0;
 	
 }
