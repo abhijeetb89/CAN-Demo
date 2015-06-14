@@ -1,7 +1,6 @@
 /**
   ******************************************************************************
   * @file    stm32f4xx_it.c
-  * @date    15/05/2015 11:09:07
   * @brief   Interrupt Service Routines.
   ******************************************************************************
   *
@@ -35,7 +34,6 @@
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx.h"
 #include "stm32f4xx_it.h"
-#include "stm32f4xx_hal_can.h"
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN 0 */
@@ -44,7 +42,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern void xPortSysTickHandler(void);
-extern HCD_HandleTypeDef hhcd_USB_OTG_FS;
+extern PCD_HandleTypeDef hpcd_USB_OTG_FS;
 extern CAN_HandleTypeDef hcan1;
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -78,9 +76,11 @@ void SysTick_Handler(void)
 void OTG_FS_IRQHandler(void)
 {
   /* USER CODE BEGIN OTG_FS_IRQn 0 */
+	
+	
 
   /* USER CODE END OTG_FS_IRQn 0 */
-  HAL_HCD_IRQHandler(&hhcd_USB_OTG_FS);
+  HAL_PCD_IRQHandler(&hpcd_USB_OTG_FS);
   /* USER CODE BEGIN OTG_FS_IRQn 1 */
 
   /* USER CODE END OTG_FS_IRQn 1 */
@@ -90,30 +90,31 @@ void OTG_FS_IRQHandler(void)
 
 void CAN1_RX0_IRQHandler(void)
 {
-			/* Store ID */
+		/* Store ID */
 			hcan1.pRxMsg->StdId = ((CAN1->sFIFOMailBox[0].RIR) & (0xFFE00000))>> 21;
 			
-			/* Store DLC */
+		/* Store DLC */
 	    hcan1.pRxMsg->DLC = (CAN1->sFIFOMailBox[0].RDTR & (0xF));
 			
-			/* Store Data Bytes */
+		/* Store Data Bytes */
 			hcan1.pRxMsg->Data[0] = (CAN1->sFIFOMailBox[0].RDLR & 0x000000FF);
 	    hcan1.pRxMsg->Data[1] = (CAN1->sFIFOMailBox[0].RDLR & 0x0000FF00)>>8;
 	    hcan1.pRxMsg->Data[2] = (CAN1->sFIFOMailBox[0].RDLR & 0x00FF0000)>>16;
 	    hcan1.pRxMsg->Data[3] = (CAN1->sFIFOMailBox[0].RDLR & 0xFF000000)>>24;
-		  hcan1.pRxMsg->Data[4] = (CAN1->sFIFOMailBox[0].RDHR & 0x000000FF);
+			hcan1.pRxMsg->Data[4] = (CAN1->sFIFOMailBox[0].RDHR & 0x000000FF);
 	    hcan1.pRxMsg->Data[5] = (CAN1->sFIFOMailBox[0].RDHR & 0x0000FF00)>>8;
 	    hcan1.pRxMsg->Data[6] = (CAN1->sFIFOMailBox[0].RDHR & 0x00FF0000)>>16;
 	    hcan1.pRxMsg->Data[7] = (CAN1->sFIFOMailBox[0].RDHR & 0xFF00000)>>24;
 	
 			/* Store time of reception of message */
-	    hcan1.pRxMsg->RxTime = (CAN1->sFIFOMailBox[0].RDTR & 0xFFFF0000) >> 16;
+	    //hcan1.pRxMsg->RxTime = (CAN1->sFIFOMailBox[0].RDTR & 0xFFFF0000) >> 16;
 	    
+			
+	
 			/* Clear buffer */
 		  CAN1->RF0R |= CAN_RF0R_RFOM0;
 	
 }
-
 
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

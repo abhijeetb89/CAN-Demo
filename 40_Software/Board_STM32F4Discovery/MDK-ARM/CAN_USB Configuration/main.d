@@ -28,8 +28,9 @@ can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_
 can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h
 can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h
 can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h
-can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
+can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h
 can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h
+can_usb configuration\main.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h
 can_usb configuration\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h
@@ -44,5 +45,14 @@ can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h
 can_usb configuration\main.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h
-can_usb configuration\main.o: ..\Inc\usb_host.h
+can_usb configuration\main.o: ..\Inc\usb_device.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h
+can_usb configuration\main.o: ..\Inc\usbd_conf.h
+can_usb configuration\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+can_usb configuration\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Inc\usbd_customhid.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+can_usb configuration\main.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h
 can_usb configuration\main.o: ..\Inc\can_dbc.h

@@ -1,7 +1,6 @@
 /**
   ******************************************************************************
   * File Name          : freertos.c
-  * Date               : 15/05/2015 11:09:07
   * Description        : Code for freertos applications
   ******************************************************************************
   *
@@ -51,6 +50,7 @@
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
+
 /* Hook prototypes */
 
 /* USER CODE BEGIN Application */

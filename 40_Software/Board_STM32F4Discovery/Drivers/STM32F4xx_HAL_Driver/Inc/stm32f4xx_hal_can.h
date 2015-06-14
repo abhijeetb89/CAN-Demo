@@ -216,8 +216,6 @@ typedef struct
   uint32_t FIFONumber;  /*!< Specifies the receive FIFO number.
                              This parameter can be CAN_FIFO0 or CAN_FIFO1 */
 
-  uint16_t RxTime;			/*!< Specified the time when CAN Message was received */	
-
 }CanRxMsgTypeDef;
 
 /**

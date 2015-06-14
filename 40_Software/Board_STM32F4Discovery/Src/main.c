@@ -1,7 +1,6 @@
 /**
   ******************************************************************************
   * File Name          : main.c
-  * Date               : 15/05/2015 11:09:07
   * Description        : Main program body
   ******************************************************************************
   *
@@ -35,10 +34,12 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 #include "cmsis_os.h"
-#include "usb_host.h"
+#include "usb_device.h"
+#include "usbd_customhid.h"
+#include "can_dbc.h"
 
 /* USER CODE BEGIN Includes */
-#include "can_dbc.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -64,8 +65,8 @@ osThreadId defaultTaskHandle;
 #define LAMP_BRAKE							GPIO_PIN_5
 #define LAMP_DOME								GPIO_PIN_6
 
-
 #define STACK_SIZE  1024
+
 
 /* USER CODE END PV */
 
@@ -75,10 +76,10 @@ static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_CAN2_Init(void);
-static void MX_CDC_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
+
 void vTask_ControlLamps(void *parameters);
 void vTask_SendDataToPc(void *parameters);
 
@@ -92,7 +93,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-		
+
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -108,8 +109,6 @@ int main(void)
   MX_ADC1_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
-	MX_USB_HOST_Init();
-	MX_CDC_Init();
 
   /* USER CODE BEGIN 2 */
 
@@ -136,14 +135,7 @@ int main(void)
   /* add threads, ... */
 	
 	/* Task reads the message MSG_INT_EXT_LIGHT and sets interior and exterior lamps accordingly */
-	xTaskCreate( vTask_ControlLamps, "SetLeds", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
-               NULL );
-							 
-	
-							 
-	/* Task sends CAN messages received by the board as well as send by board to PC via USB  */						 
-	//xTaskCreate( vTask_SendDataToPc, "SendDataToPc", STACK_SIZE, NULL, tskIDLE_PRIORITY, 
-  //             NULL );						 
+	xTaskCreate( vTask_ControlLamps, "SetLeds", STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
 	
   /* USER CODE END RTOS_THREADS */
 
@@ -200,6 +192,10 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
   HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5);
 
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
+
+  HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
+
 }
 
 /* ADC1 init function */
@@ -211,7 +207,7 @@ void MX_ADC1_Init(void)
     /**Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
     */
   hadc1.Instance = ADC1;
-  hadc1.Init.ClockPrescaler = ADC_CLOCKPRESCALER_PCLK_DIV2;
+  hadc1.Init.ClockPrescaler = ADC_CLOCKPRESCALER_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION12b;
   hadc1.Init.ScanConvMode = DISABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
@@ -236,14 +232,14 @@ void MX_ADC1_Init(void)
 void MX_CAN1_Init(void)
 {
 
-	IRQn_Type irq;
-	static CanRxMsgTypeDef RxMessage;
-	CAN_FilterConfTypeDef  sFilterConfig; 
+  IRQn_Type irq;
+  static CanRxMsgTypeDef RxMessage;
+  CAN_FilterConfTypeDef  sFilterConfig; 
 	
-	__CAN_CLK_ENABLE();
+  __CAN_CLK_ENABLE();
 	
   hcan1.Instance = CAN1;
-	hcan1.pRxMsg   = &RxMessage;
+  hcan1.pRxMsg   = &RxMessage;
   hcan1.Init.Prescaler = 16;
   hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SJW = CAN_SJW_1TQ;
@@ -257,7 +253,7 @@ void MX_CAN1_Init(void)
   hcan1.Init.TXFP = DISABLE;
   HAL_CAN_Init(&hcan1);
 	
-	/*##-2- Configure the CAN Filter ###########################################*/
+  /*##-2- Configure the CAN Filter ###########################################*/
   sFilterConfig.FilterNumber = 0;
   sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
@@ -275,11 +271,11 @@ void MX_CAN1_Init(void)
     while(1);
   }
 	
-	irq = CAN1_RX0_IRQn;
+  irq = CAN1_RX0_IRQn;
 	
-	HAL_NVIC_EnableIRQ(irq);
+  HAL_NVIC_EnableIRQ(irq);
 	
-	HAL_CAN_Receive_IT(&hcan1, CAN_FIFO0);
+  HAL_CAN_Receive_IT(&hcan1, CAN_FIFO0);
 
 }
 
@@ -431,13 +427,6 @@ void MX_GPIO_Init(void)
 
 }
 
-void MX_CDC_Init(void)
-{
-	
-	
-
-}
-
 /* USER CODE BEGIN 4 */
 
 /*
@@ -448,6 +437,8 @@ Description: This FreeRTOS thread reads message MSG_INT_EXT_LIGHT(0x350) and set
 */
 void vTask_ControlLamps(void *parameters)
 {
+	uint8_t data[11];
+	int i=0;
 			
 	for(;;)	//run task continuously
 	{
@@ -548,6 +539,8 @@ void vTask_ControlLamps(void *parameters)
 			else{
 				HAL_GPIO_WritePin(GPIOD, LAMP_DOME, GPIO_PIN_RESET);
 			}
+			
+			
 				
 		}
 	
@@ -555,33 +548,47 @@ void vTask_ControlLamps(void *parameters)
 	
 }
 
-void vTask_SendDataToPc(void *parameters)
-{
-	/*
-	USBH_HandleTypeDef phost;
-	
-	for(;;)
-	{
-		USBH_CDC_Transmit(, uint8_t *pbuff, uint32_t length);
-	}
-	*/
-
-}
-
-
 /* USER CODE END 4 */
 
 /* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
 {
-  /* init code for USB_HOST */
-  MX_USB_HOST_Init();
+  /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
 
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
+	
+	//Format: ID-Byte1, ID-Byte2, DLC, Bytes-0 to 7
+	uint8_t data[11] = {0x50,0x03,0x8,0x99,0xCC,0xFF,0x00,0x22,0x33,0x66,0x99};
+	int i=0;
+	
   for(;;)
   {
-    osDelay(1);
+		/*
+		i=0;
+		
+		data[i++] = (hcan1.pRxMsg->StdId) >> 8;
+		data[i++] =  hcan1.pRxMsg->StdId;
+		data[i++] =  hcan1.pRxMsg->DLC;
+			
+		for(; i<12; i++)
+		{
+				data[i] = hcan1.pRxMsg->Data[i];
+		}
+		*/
+		
+		if(USBD_OK == USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, data, sizeof(data)))
+		{
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+		}
+		else
+		{
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+		}
+		
+    
+		osDelay(100);
   }
   /* USER CODE END 5 */ 
 }
@@ -615,4 +622,3 @@ void assert_failed(uint8_t* file, uint32_t line)
 */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

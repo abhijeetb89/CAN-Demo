@@ -28,5 +28,6 @@ can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\In
 can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h
 can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h
 can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h
-can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
+can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h
 can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h
+can_usb configuration\stm32f4xx_hal_rcc_ex.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
