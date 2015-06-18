@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<DBC 
+    title="CAN DBC"
+	>
+
+ 	<Message>
+        <Name>Int_Ext_Lights</Name>
+		<ID>350</ID>
+		<DLC>2</DLC>
+		<CycleTime>100</CycleTime>
+		<Sender>Nucleo</Sender>
+    </Message>	
+	
+	<Message>
+        <Name>Interior_Temperature</Name>
+		<ID>300</ID>
+		<DLC>2</DLC>
+		<CycleTime>1000</CycleTime>
+		<Sender>AOAA_M0</Sender>
+    </Message>
+	
+	<Message>
+        <Name>Ambient_Brightness</Name>
+		<ID>400</ID>
+		<DLC>2</DLC>
+		<CycleTime>1000</CycleTime>
+		<Sender>AOAA_M0</Sender>
+    </Message>	
+	
+	<Message>
+        <Name>Vehicle_Speed</Name>
+		<ID>250</ID>
+		<DLC>1</DLC>
+		<CycleTime>100</CycleTime>
+		<Sender>AOAA_M3</Sender>
+    </Message>	
+	
+	<Message>
+        <Name>Parking_Obstacle</Name>
+		<ID>200</ID>
+		<DLC>1</DLC>
+		<CycleTime>50</CycleTime>
+		<Sender>AOAA_M3</Sender>
+    </Message>	
+	
+	<Message>
+        <Name>Airbag_Release</Name>
+		<ID>50</ID>
+		<DLC>1</DLC>
+		<CycleTime>10</CycleTime>
+		<Sender>Gateway</Sender>
+    </Message>	
+
+</DBC>
