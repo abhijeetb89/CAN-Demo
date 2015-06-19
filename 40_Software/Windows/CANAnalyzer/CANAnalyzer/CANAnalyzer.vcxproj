@@ -80,6 +80,7 @@
   <ItemGroup>
     <ClCompile Include="CANTrace.cpp" />
     <ClCompile Include="CAN_DBC.cpp" />
+    <ClCompile Include="FlickerFreeListView.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SettingsForm.cpp" />
     <ClCompile Include="USB_Com.cpp" />
@@ -89,6 +90,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CAN_DBC.h" />
+    <ClInclude Include="FlickerFreeListView.h" />
     <ClInclude Include="libusb.h" />
     <ClInclude Include="SettingsForm.h">
       <FileType>CppForm</FileType>

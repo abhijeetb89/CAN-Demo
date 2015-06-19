@@ -55,6 +55,7 @@ namespace CANAnalyzer {
 	private: static String^ trace_name = gcnew String("");
 	private: static String^ trace_path = gcnew String("");
 	private: static bool overwrite_checked = false;
+	private: static int time_precision = 1;
 	private: System::Windows::Forms::OpenFileDialog^  OpenTraceDialog;
 	private: System::Windows::Forms::FolderBrowserDialog^  TraceFolderBrowser;
 	private: System::Windows::Forms::TextBox^  textBox_TraceName;
@@ -62,6 +63,10 @@ namespace CANAnalyzer {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Button^  Settings_Ok;
 	private: System::Windows::Forms::Button^  Settings_Cancel;
+	private: System::Windows::Forms::Label^  TimePrecision;
+	private: System::Windows::Forms::NumericUpDown^  PrecisionUpDown;
+
+
 
 	private:
 		/// <summary>
@@ -90,6 +95,9 @@ namespace CANAnalyzer {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->Settings_Ok = (gcnew System::Windows::Forms::Button());
 			this->Settings_Cancel = (gcnew System::Windows::Forms::Button());
+			this->TimePrecision = (gcnew System::Windows::Forms::Label());
+			this->PrecisionUpDown = (gcnew System::Windows::Forms::NumericUpDown());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PrecisionUpDown))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// checkBox_OverwriteTrace
@@ -188,9 +196,9 @@ namespace CANAnalyzer {
 			// 
 			this->Settings_Ok->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Settings_Ok->Location = System::Drawing::Point(511, 228);
+			this->Settings_Ok->Location = System::Drawing::Point(513, 274);
 			this->Settings_Ok->Name = L"Settings_Ok";
-			this->Settings_Ok->Size = System::Drawing::Size(93, 39);
+			this->Settings_Ok->Size = System::Drawing::Size(95, 38);
 			this->Settings_Ok->TabIndex = 9;
 			this->Settings_Ok->Text = L"OK";
 			this->Settings_Ok->UseVisualStyleBackColor = true;
@@ -200,19 +208,39 @@ namespace CANAnalyzer {
 			// 
 			this->Settings_Cancel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Settings_Cancel->Location = System::Drawing::Point(632, 228);
+			this->Settings_Cancel->Location = System::Drawing::Point(632, 275);
 			this->Settings_Cancel->Name = L"Settings_Cancel";
 			this->Settings_Cancel->Size = System::Drawing::Size(95, 38);
-			this->Settings_Cancel->TabIndex = 10;
+			this->Settings_Cancel->TabIndex = 9;
 			this->Settings_Cancel->Text = L"Cancel";
 			this->Settings_Cancel->UseVisualStyleBackColor = true;
 			this->Settings_Cancel->Click += gcnew System::EventHandler(this, &SettingsForm::Settings_Cancel_Click);
+			// 
+			// TimePrecision
+			// 
+			this->TimePrecision->AutoSize = true;
+			this->TimePrecision->Location = System::Drawing::Point(27, 222);
+			this->TimePrecision->Name = L"TimePrecision";
+			this->TimePrecision->Size = System::Drawing::Size(101, 17);
+			this->TimePrecision->TabIndex = 10;
+			this->TimePrecision->Text = L"Time Precision";
+			// 
+			// PrecisionUpDown
+			// 
+			this->PrecisionUpDown->Location = System::Drawing::Point(186, 222);
+			this->PrecisionUpDown->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 7, 0, 0, 0 });
+			this->PrecisionUpDown->Name = L"PrecisionUpDown";
+			this->PrecisionUpDown->Size = System::Drawing::Size(52, 22);
+			this->PrecisionUpDown->TabIndex = 11;
+			this->PrecisionUpDown->ValueChanged += gcnew System::EventHandler(this, &SettingsForm::PrecisionUpDown_ValueChanged);
 			// 
 			// SettingsForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(838, 295);
+			this->ClientSize = System::Drawing::Size(772, 335);
+			this->Controls->Add(this->PrecisionUpDown);
+			this->Controls->Add(this->TimePrecision);
 			this->Controls->Add(this->Settings_Cancel);
 			this->Controls->Add(this->Settings_Ok);
 			this->Controls->Add(this->label3);
@@ -228,6 +256,7 @@ namespace CANAnalyzer {
 			this->Name = L"SettingsForm";
 			this->Text = L"Settings";
 			this->Load += gcnew System::EventHandler(this, &SettingsForm::SettingsForm_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PrecisionUpDown))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -305,7 +334,16 @@ namespace CANAnalyzer {
 	{
 		return overwrite_checked;
 	}
+
+	public: Void setTimePrecision(int precision)
+	{
+		time_precision = precision;
+	}
 	
+	public: int getTimePrecision()
+	{
+		return time_precision;
+	}
 	
 	private: System::Void SettingsForm_Load(System::Object^  sender, System::EventArgs^  e) {
 		//retrieve the last settings
@@ -313,6 +351,7 @@ namespace CANAnalyzer {
 		textBox_TracePath->Text = trace_path;
 		textBox_TraceName->Text = trace_name;
 		checkBox_OverwriteTrace->Checked = overwrite_checked;
+		PrecisionUpDown->Value = time_precision;
 	}
 	
 	private: System::Void Settings_Ok_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -321,12 +360,17 @@ namespace CANAnalyzer {
 		trace_path = textBox_TracePath->Text;
 		trace_name = textBox_TraceName->Text;
 		overwrite_checked = checkBox_OverwriteTrace->Checked;
+		time_precision = (int)PrecisionUpDown->Value;
 		this->Close();
 	}
 
 	private: System::Void Settings_Cancel_Click(System::Object^  sender, System::EventArgs^  e) {
 		//close the form without saving any changes
 		this->Close();
+	}
+	
+	private: System::Void PrecisionUpDown_ValueChanged(System::Object^  sender, System::EventArgs^  e) {
+		time_precision = (int)PrecisionUpDown->Value;
 	}
 };
 }

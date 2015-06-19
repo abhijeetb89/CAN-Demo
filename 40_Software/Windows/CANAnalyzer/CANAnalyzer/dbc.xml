@@ -50,6 +50,14 @@
 		<DLC>1</DLC>
 		<CycleTime>10</CycleTime>
 		<Sender>Gateway</Sender>
-    </Message>	
+    </Message>
+
+	<Message>
+        <Name>Engine_Status</Name>
+		<ID>150</ID>
+		<DLC>1</DLC>
+		<CycleTime>100</CycleTime>
+		<Sender>Gateway</Sender>
+    </Message>		
 
 </DBC>

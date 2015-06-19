@@ -7,6 +7,7 @@
 #include "USB_Com.h"
 #include "CAN_DBC.h"
 #include "SettingsForm.h"
+#include "FlickerFreeListView.h"
 
 namespace CANAnalyzer {
 
@@ -52,6 +53,8 @@ namespace CANAnalyzer {
 			 bool isStarted = false;
 			 bool isPaused = false;
 			 bool isUpdating = false;
+			 bool isRelativeTimePressed = false;
+			 bool time_flag = false;
 			 StreamWriter^ outFile;
 			 String^ filename;
 			 USB_Com *usb_device = new USB_Com();
@@ -82,6 +85,9 @@ namespace CANAnalyzer {
 	private: System::Windows::Forms::ToolStrip^  toolStrip2;
 	private: System::Windows::Forms::ToolStripButton^  Settings;
 	private: System::Windows::Forms::ColumnHeader^  Node;
+	private: System::Windows::Forms::ToolStripButton^  RelativeTime;
+	private: System::Windows::Forms::ToolStripButton^  ContinueUpdate;
+
 
 
 	private: System::ComponentModel::IContainer^  components;
@@ -100,7 +106,8 @@ namespace CANAnalyzer {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(CANTrace::typeid));
-			this->trace = (gcnew System::Windows::Forms::ListView());
+			//this->trace = (gcnew System::Windows::Forms::ListView());
+			this->trace = (gcnew FlickerFreeListView());
 			this->Message = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Id = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Dlc = (gcnew System::Windows::Forms::ColumnHeader());
@@ -115,6 +122,8 @@ namespace CANAnalyzer {
 			this->Clear = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStrip2 = (gcnew System::Windows::Forms::ToolStrip());
 			this->Settings = (gcnew System::Windows::Forms::ToolStripButton());
+			this->RelativeTime = (gcnew System::Windows::Forms::ToolStripButton());
+			this->ContinueUpdate = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStrip1->SuspendLayout();
 			this->toolStrip2->SuspendLayout();
 			this->SuspendLayout();
@@ -131,9 +140,6 @@ namespace CANAnalyzer {
 			this->trace->TabIndex = 0;
 			this->trace->UseCompatibleStateImageBehavior = false;
 			this->trace->View = System::Windows::Forms::View::Details;
-			this->SetStyle(ControlStyles::OptimizedDoubleBuffer | ControlStyles::AllPaintingInWmPaint, true);
-			this->SetStyle(ControlStyles::EnableNotifyMessage, true);
-			this->DoubleBuffered = true;
 			// 
 			// Message
 			// 
@@ -181,9 +187,9 @@ namespace CANAnalyzer {
 			this->toolStrip1->AutoSize = false;
 			this->toolStrip1->Dock = System::Windows::Forms::DockStyle::None;
 			this->toolStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
-			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
 				this->Start, this->Pause,
-					this->Stop, this->Clear
+					this->Stop, this->Clear, this->RelativeTime, this->ContinueUpdate
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 43);
 			this->toolStrip1->Name = L"toolStrip1";
@@ -262,6 +268,27 @@ namespace CANAnalyzer {
 			this->Settings->Text = L"Settings";
 			this->Settings->Click += gcnew System::EventHandler(this, &CANTrace::Settings_Click);
 			// 
+			// RelativeTime
+			// 
+			this->RelativeTime->AutoSize = false;
+			this->RelativeTime->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			this->RelativeTime->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"RelativeTime.Image")));
+			this->RelativeTime->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->RelativeTime->Margin = System::Windows::Forms::Padding(0, 1, 2, 2);
+			this->RelativeTime->Name = L"RelativeTime";
+			this->RelativeTime->Size = System::Drawing::Size(24, 36);
+			this->RelativeTime->Text = L"Relative Time";
+			this->RelativeTime->Click += gcnew System::EventHandler(this, &CANTrace::RelativeTime_Click);
+			// 
+			// ContinueUpdate
+			// 
+			this->ContinueUpdate->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			this->ContinueUpdate->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ContinueUpdate.Image")));
+			this->ContinueUpdate->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->ContinueUpdate->Name = L"ContinueUpdate";
+			this->ContinueUpdate->Size = System::Drawing::Size(24, 36);
+			this->ContinueUpdate->Text = L"ContinueUpdate";
+			// 
 			// CANTrace
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -302,6 +329,8 @@ namespace CANAnalyzer {
 
 		if (!isPaused){
 
+			time_flag = false;
+			
 			if (settings->getOverWriteCheckStatus())
 			{
 				filename = Path::Combine(settings->getTracePath(), (settings->getTraceName() + ".txt"));
@@ -356,24 +385,68 @@ namespace CANAnalyzer {
 	private: void UpdateStatus(String^ msg) {
 
 		String^ delimStr = ";!|$";
-
 		array<Char>^ delimiter = delimStr->ToCharArray();
 		array<String^>^ words;
 		String^ traceline = "";
 		int wordCount = 0;
-
 		words = msg->Split(delimiter);
 
+		static milliseconds current_time_ms;
+		static milliseconds last_time_ms;
+		static double absolute_time_ms = 0;
+		static double relative_time_ms = 0;
 
-		ListViewItem^ list = gcnew ListViewItem(words[wordCount++]);
-		list->SubItems->Add(words[wordCount++]);
-		list->SubItems->Add(words[wordCount++]);
-		list->SubItems->Add(words[wordCount++]);
-		list->SubItems->Add("");
-		list->SubItems->Add(words[wordCount++]);
+		////////////////////////////////////////////////////////////////////
+		// Timing Calculations
+		////////////////////////////////////////////////////////////////////
+		current_time_ms = duration_cast<milliseconds>(
+			system_clock::now().time_since_epoch()
+			);
 
-		trace->Items->Add(list);
-		trace->Invalidate(list->Bounds);
+		if (!time_flag)
+		{
+			last_time_ms = current_time_ms;
+			time_flag = true;
+			absolute_time_ms = 0;
+			relative_time_ms = 0;
+		}
+		else
+		{
+			std::setprecision(4);
+			absolute_time_ms += (((double)(current_time_ms.count() - last_time_ms.count())) / 1000);
+			relative_time_ms = (((double)(current_time_ms.count() - last_time_ms.count())) / 1000);
+			last_time_ms = current_time_ms;
+		}
+		//////////////////////////////////////////////////////////////////////
+		
+		
+		trace->BeginUpdate();
+		try{
+
+			ListViewItem^ list = gcnew ListViewItem(words[wordCount++]);
+			list->SubItems->Add(words[wordCount++]);
+			list->SubItems->Add(words[wordCount++]);
+			list->SubItems->Add(words[wordCount++]);
+			
+			if (!isRelativeTimePressed)
+			{
+				list->SubItems->Add(absolute_time_ms.ToString("N" + (settings->getTimePrecision()).ToString()));
+			}
+			else
+			{
+				list->SubItems->Add(relative_time_ms.ToString("N" + (settings->getTimePrecision()).ToString()));
+			}
+			
+			list->SubItems->Add(words[wordCount++]);
+
+			trace->Items->Add(list);
+			
+		}
+		finally{
+
+			trace->EndUpdate();
+		}
+
 		trace->Items[trace->Items->Count - 1]->EnsureVisible();
 
 		for (int i = 0; i < wordCount; i++)
@@ -384,9 +457,7 @@ namespace CANAnalyzer {
 		outFile->WriteLine(traceline);
 
 		this->Update();
-		
-
-		
+	
 	}
 
 
@@ -435,30 +506,23 @@ namespace CANAnalyzer {
 
 	
 	private: System::Void Settings_Click(System::Object^  sender, System::EventArgs^  e) {
-	
 		settings->ShowDialog();
 	}
-			
-			 /*
-			 public: System::Void UpdateItem(int iIndex)
-			 {
-				 isUpdating = true;
-				 this->Update();
-				 isUpdating = false;
-			 }
 
-			protected:  virtual System::Void WndProc(System::Windows::Forms::Message% messg) override
-			 {
-				if (isUpdating)
-				 {
-					 // We do not want to erase the background, 
-					 // turn this message into a null-message
-					
-				 }
-				 
-			 }
-			 */	
-			
+	private: System::Void RelativeTime_Click(System::Object^  sender, System::EventArgs^  e) {
+		if (!isRelativeTimePressed)
+		{
+			isRelativeTimePressed = true;
+			RelativeTime->Checked = true;
+		}
+		else
+		{
+			isRelativeTimePressed = false;
+			RelativeTime->Checked = false;
+		}
+	}
 
 };
+
+
 }

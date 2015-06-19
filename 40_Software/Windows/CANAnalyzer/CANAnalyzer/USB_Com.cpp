@@ -79,10 +79,6 @@ String^ USB_Com::USB_Com_Receive()
 	unsigned int received_CAN_Id;
 	String^ stringData = "";
 	String^ sender = "";
-	static int stopTime = 0;
-	double time;
-	System::Diagnostics::Stopwatch ^ timePerParse;
-	timePerParse = System::Diagnostics::Stopwatch::StartNew();
 	
 
 	if (libusb_interrupt_transfer(usb_device_handle, 0x81, buffer, sizeof(buffer), &rcv_length, 1000))	//no data is received

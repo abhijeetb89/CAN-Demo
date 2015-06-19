@@ -4,8 +4,12 @@
 #include <iostream>
 #include <string>
 #include <msclr\marshal_cppstd.h>
+#include <ctime>
+#include <chrono>
+#include <iomanip> 
 
 using namespace std;
+using namespace std::chrono;
 using namespace System;
 
 namespace CANAnalyzer{
