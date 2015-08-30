@@ -343,10 +343,12 @@ namespace CANAnalyzer {
 				myfile >> a;
 				myfile.close();
 
+			    filename = Path::Combine(settings->getTracePath(), (settings->getTraceName() + "_" + a.ToString() + ".txt"));
+
 				myfile.open("settings.txt", std::ios_base::out | std::fstream::trunc);
 				myfile << (a + 1);
 				myfile.close();
-				filename = Path::Combine(settings->getTracePath(), (settings->getTraceName() + "_" + a.ToString() + ".txt"));
+				
 			}
 
 			outFile = gcnew StreamWriter(filename);
@@ -449,11 +451,23 @@ namespace CANAnalyzer {
 
 		trace->Items[trace->Items->Count - 1]->EnsureVisible();
 
-		for (int i = 0; i < wordCount; i++)
-		{
-			traceline += words[i] + "	";
-		}
+		int lineCnt = 0;
 
+		traceline += words[lineCnt++] + "	";
+		traceline += words[lineCnt++] + "	";
+		traceline += words[lineCnt++] + "	";
+		traceline += words[lineCnt++] + "	";
+
+		if (!isRelativeTimePressed)
+		{
+			traceline += absolute_time_ms.ToString() + "		";
+		}
+		else
+		{
+			traceline += relative_time_ms.ToString() + "		";
+		}
+		
+		traceline += words[lineCnt++] + "	";
 		outFile->WriteLine(traceline);
 
 		this->Update();
