@@ -78,6 +78,7 @@ void StartDefaultTask(void const * argument);
 /* USER CODE BEGIN PFP */
 void vTask_SendCanMsg_Lamps(void *parameters);
 void vTask_ReadUserCommand(void *parameters);
+void vTask_ReadCanMsg_EngineStatus(void *parameters);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -128,10 +129,13 @@ int main(void)
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 	/* Task sends the message MSG_INT_EXT_LIGHT */
-	xTaskCreate( vTask_SendCanMsg_Lamps, "SendLampMsg", STACK_SIZE, NULL, 2, NULL );
+	xTaskCreate( vTask_SendCanMsg_Lamps, "SendLampMsg", STACK_SIZE, NULL, PRIORITY_SEND_CANMSG_LAMPS, NULL );
 							 
 	/* Task reads input from user */
-	xTaskCreate( vTask_ReadUserCommand, "ReadUserCommand", STACK_SIZE, NULL, 0, NULL );
+	xTaskCreate( vTask_ReadUserCommand, "ReadUserCommand", STACK_SIZE, NULL, PRIORITY_READ_USER_COMMAND, NULL );
+	
+	/* Task reads signal from Engine Status message */
+	xTaskCreate( vTask_ReadCanMsg_EngineStatus, "ReadEngineStatus", STACK_SIZE, NULL, 1, NULL );
 							 
 	/* USER CODE END RTOS_THREADS */
 
@@ -223,12 +227,14 @@ void MX_ADC_Init(void)
 /* CAN init function */
 void MX_CAN_Init(void)
 {
-
+	IRQn_Type irq;
   static CanTxMsgTypeDef TxMessage;
+	static CanRxMsgTypeDef RxMessage;
+	CAN_FilterConfTypeDef  sFilterConfig; 
 	
 	hcan.Instance = CAN;
   hcan.pTxMsg = &TxMessage;
-	
+	hcan.pRxMsg = &RxMessage;
 	hcan.Init.Prescaler = 2;
   hcan.Init.Mode = CAN_MODE_NORMAL;
   hcan.Init.SJW = CAN_SJW_1TQ;
@@ -241,6 +247,30 @@ void MX_CAN_Init(void)
   hcan.Init.RFLM = DISABLE;
   hcan.Init.TXFP = DISABLE;
   HAL_CAN_Init(&hcan);
+	
+	/*##-2- Configure the CAN Filter ###########################################*/
+  sFilterConfig.FilterNumber = 0;
+  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
+  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
+  sFilterConfig.FilterIdHigh = 0x0000;
+  sFilterConfig.FilterIdLow = 0x0000;
+  sFilterConfig.FilterMaskIdHigh = 0x0000;
+  sFilterConfig.FilterMaskIdLow = 0x0000;
+  sFilterConfig.FilterFIFOAssignment = 0;
+  sFilterConfig.FilterActivation = ENABLE;
+  sFilterConfig.BankNumber = 14;
+  
+  if(HAL_CAN_ConfigFilter(&hcan, &sFilterConfig) != HAL_OK)
+  {
+    /* Filter configuration Error */
+    while(1);
+  }
+	
+	irq = CEC_CAN_IRQn;
+	
+  HAL_NVIC_EnableIRQ(irq);
+	
+	HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
 	
 }
 
@@ -353,6 +383,32 @@ void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void vTask_ReadCanMsg_EngineStatus(void *parameters)
+{
+	TickType_t xLastWakeTime;
+  const TickType_t xFrequency = 50;
+	
+	for(;;)
+	{
+		if(hcan.pRxMsg->StdId == 0x150)
+		{
+			if(hcan.pRxMsg->Data[0] == 0x01)
+			{
+				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+			}
+			else
+			{
+				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+			}
+		}
+		
+			vTaskDelayUntil(&xLastWakeTime,xFrequency);
+	
+	}
+
+}
+
+
 void vTask_ReadUserCommand(void *parameters)
 {
 	for(;;)

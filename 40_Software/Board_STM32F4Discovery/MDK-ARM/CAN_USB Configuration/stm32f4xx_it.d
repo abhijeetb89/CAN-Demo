@@ -46,3 +46,13 @@ can_usb configuration\stm32f4xx_it.o: ..\Middlewares\Third_Party\FreeRTOS\Source
 can_usb configuration\stm32f4xx_it.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h
 can_usb configuration\stm32f4xx_it.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h
 can_usb configuration\stm32f4xx_it.o: ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h
+can_usb configuration\stm32f4xx_it.o: ..\Inc\usb_device.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h
+can_usb configuration\stm32f4xx_it.o: ..\Inc\usbd_conf.h
+can_usb configuration\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+can_usb configuration\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Inc\usbd_customhid.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+can_usb configuration\stm32f4xx_it.o: ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h

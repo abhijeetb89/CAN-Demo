@@ -35,6 +35,8 @@
 #include "stm32f4xx.h"
 #include "stm32f4xx_it.h"
 #include "cmsis_os.h"
+#include "usb_device.h"
+#include "usbd_customhid.h"
 
 /* USER CODE BEGIN 0 */
 
@@ -44,6 +46,7 @@
 extern void xPortSysTickHandler(void);
 extern PCD_HandleTypeDef hpcd_USB_OTG_FS;
 extern CAN_HandleTypeDef hcan1;
+
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
 /******************************************************************************/
@@ -90,6 +93,7 @@ void OTG_FS_IRQHandler(void)
 
 void CAN1_RX0_IRQHandler(void)
 {
+	
 		/* Store ID */
 			hcan1.pRxMsg->StdId = ((CAN1->sFIFOMailBox[0].RIR) & (0xFFE00000))>> 21;
 			
@@ -109,10 +113,9 @@ void CAN1_RX0_IRQHandler(void)
 			/* Store time of reception of message */
 	    //hcan1.pRxMsg->RxTime = (CAN1->sFIFOMailBox[0].RDTR & 0xFFFF0000) >> 16;
 	    
-			
-	
 			/* Clear buffer */
 		  CAN1->RF0R |= CAN_RF0R_RFOM0;
+	
 	
 }
 

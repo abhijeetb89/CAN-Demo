@@ -1,0 +1,59 @@
+  CANAnalyzer.CANTrace.resources - Embedded, ContainedInManifestFile, 
+  CANAnalyzer.SettingsForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly CANAnalyzer, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CANAnalyzer.SettingsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setDbcName(String): PrivateScope, Public, HideBySig
+    getDbcName(): PrivateScope, Public, HideBySig
+    setTraceName(String): PrivateScope, Public, HideBySig
+    getTraceName(): PrivateScope, Public, HideBySig
+    setTracePath(String): PrivateScope, Public, HideBySig
+    getTracePath(): PrivateScope, Public, HideBySig
+    setOverWriteCheckStatus(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    getOverWriteCheckStatus(): PrivateScope, Public, HideBySig
+    setTimePrecision(Int32): PrivateScope, Public, HideBySig
+    getTimePrecision(): PrivateScope, Public, HideBySig
+Class CANAnalyzer.CAN_DBC: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    CAN_DBC_GetData(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetMsgCount(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetMsgNames(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetIds(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetDlcs(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetCycleTimes(): PrivateScope, Public, HideBySig
+    CAN_DBC_GetSenders(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct CANAnalyzer.USB_Com: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class CANAnalyzer.FlickerFreeListView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ListView
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CANAnalyzer.CANTrace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CANAnalyzer.CANTrace+ListViewCallback: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask

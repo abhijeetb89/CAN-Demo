@@ -414,12 +414,12 @@ ARM Macro Assembler    Page 7
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend="can configuration\startup_stm32f091xc.d" -o"can configuration\sta
-rtup_stm32f091xc.o" -I..\Inc -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Bo
-ard_STM32Nucleo\MDK-ARM\RTE" -IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Dev
-ice\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predef
-ine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 514" --predefine="S
-TM32F091 SETA 1" --list=startup_stm32f091xc.lst ..\Drivers\CMSIS\Device\ST\STM3
-2F0xx\Source\Templates\arm\startup_stm32f091xc.s
+rtup_stm32f091xc.o" -I..\Inc -IE:\Special_Projects\CAN_HS-LS_GW\40_Software\Boa
+rd_STM32Nucleo\MDK-ARM\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Devic
+e\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefin
+e="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 514" --predefine="STM
+32F091 SETA 1" --list=startup_stm32f091xc.lst ..\Drivers\CMSIS\Device\ST\STM32F
+0xx\Source\Templates\arm\startup_stm32f091xc.s
 
 
 

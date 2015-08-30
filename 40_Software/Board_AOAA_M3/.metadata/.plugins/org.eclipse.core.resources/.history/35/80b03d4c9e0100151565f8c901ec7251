@@ -1,0 +1,34 @@
+/*
+ * can_handler.c
+ *
+ *  Created on: 24.05.2015
+ *      Author: Abhijeet
+ */
+
+#include "can_handler.h"
+#include "lpc17xx_can.h"
+
+void can_handler_init()
+{
+	CAN_Init(LPC_CAN1, BAUD_RATE);
+
+
+}
+
+void can_handler_send(uint16_t id, uint8_t dlc, uint8_t *data)
+{
+	CAN_MSG_Type CAN_Msg;
+	CAN_Msg.id     = ;
+    CAN_Msg.len    = ;
+    CAN_Msg.dataA  = ;
+
+
+
+	Status CAN_SendMsg(LPC_CAN1, );
+}
+
+void can_handler_receive()
+{
+
+}
+

@@ -37,6 +37,7 @@
 #include "usb_device.h"
 #include "usbd_customhid.h"
 #include "can_dbc.h"
+#include "timers.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -51,6 +52,11 @@ CAN_HandleTypeDef hcan2;
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN PV */
+
+uint8_t engine_switch_pressed = 0;
+uint8_t message_received_flag = 0;
+uint8_t message_transmitted_flag = 0;
+uint8_t timer_expire_count=0;
 
 #define LAMP_HIGH_BEAM			 		GPIO_PIN_12
 #define LAMP_LOW_BEAM				 		GPIO_PIN_13
@@ -81,6 +87,7 @@ void StartDefaultTask(void const * argument);
 /* USER CODE BEGIN PFP */
 
 void vTask_ControlLamps(void *parameters);
+void vTask_SendEngineStatus(void *parameters);
 void vTask_SendDataToPc(void *parameters);
 
 /* USER CODE END PFP */
@@ -109,7 +116,7 @@ int main(void)
   MX_ADC1_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
-
+	MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -128,14 +135,16 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  //osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  //defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 	
 	/* Task reads the message MSG_INT_EXT_LIGHT and sets interior and exterior lamps accordingly */
+	//xTaskCreate( vTask_SendDataToPc, "USBTask", STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
 	xTaskCreate( vTask_ControlLamps, "SetLeds", STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+	xTaskCreate( vTask_SendEngineStatus, "SendEngineStatus", STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, NULL );
 	
   /* USER CODE END RTOS_THREADS */
 
@@ -234,12 +243,14 @@ void MX_CAN1_Init(void)
 
   IRQn_Type irq;
   static CanRxMsgTypeDef RxMessage;
+	static CanTxMsgTypeDef TxMessage;
   CAN_FilterConfTypeDef  sFilterConfig; 
 	
   __CAN_CLK_ENABLE();
 	
   hcan1.Instance = CAN1;
   hcan1.pRxMsg   = &RxMessage;
+	hcan1.pTxMsg   = &TxMessage;
   hcan1.Init.Prescaler = 16;
   hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SJW = CAN_SJW_1TQ;
@@ -429,6 +440,129 @@ void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void vTimerCallback( TimerHandle_t pxTimer )
+{
+	const uint8_t xMaxExpiryCountBeforeStopping = 5;
+	
+	
+	/* Optionally do something if the pxTimer parameter is NULL. */
+  configASSERT( pxTimer );
+	
+	if(xMaxExpiryCountBeforeStopping == timer_expire_count)
+	{
+		timer_expire_count = 0;	 
+		xTimerStop( pxTimer, 0 );
+	}
+	else
+	{
+					
+					
+	
+	}
+
+}
+
+/*
+Task: 			 vTask_SendEngineStatus	
+Parameters:  void
+Return: 		 void
+Description: This FreeRTOS thread sends the engine status to all ECUs. Note that engine button is push to start
+             and push to stop.
+*/
+
+void vTask_SendEngineStatus(void *parameters)
+{
+	uint8_t i=0;
+	uint8_t data[11];
+	static uint8_t msg_transmit_cnt=5;
+	TickType_t xLastWakeTime;
+  const TickType_t xFrequency = 1000;
+	TimerHandle_t xTimer;
+	xTimer = xTimerCreate
+								(  /* Just a text name, not used by the RTOS kernel. */
+                     "Timer",
+                     /* The timer period in ticks. */
+                     ( 200 ),
+                     /* The timers will auto-reload themselves when they expire. */
+                     pdTRUE,
+                     /* Assign each timer a unique id equal to its array index. */
+                     ( void * ) 1,
+                     /* Each timer calls the same callback when it expires. */
+                     vTimerCallback
+                );
+										 
+	for(;;)
+		{
+			//switch has been pressed. inital value of engine_switch_pressed is 0.
+			if((GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)) && (msg_transmit_cnt==5))
+			{
+				engine_switch_pressed= !engine_switch_pressed;
+				msg_transmit_cnt = 0;
+				/*
+				timer_expire_count = 0;				
+				if( xTimerStart( xTimer, 0 ) != pdPASS )
+        {
+           // The timer could not be set into the Active state. 
+        }
+				*/
+				
+			}	
+			
+			if(msg_transmit_cnt<5)
+			{
+				//prepare message
+					hcan1.pTxMsg->StdId   = MSG_Engine_Status;
+					hcan1.pTxMsg->DLC     = DLC_Engine_Status;
+					hcan1.pTxMsg->IDE     = CAN_RTR_DATA;
+					hcan1.pTxMsg->RTR     = CAN_ID_STD;
+					hcan1.pTxMsg->Data[0] = (engine_switch_pressed & SIGNAL_ENGINE_STATUS);
+					
+					//Transmit the message								
+					if(HAL_OK == HAL_CAN_Transmit(&hcan1, 100))
+					{
+							HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+					}
+					else
+					{
+							HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+					}
+					
+					//timer_expire_count += 1;
+					msg_transmit_cnt =  msg_transmit_cnt + 1;
+					
+					//make message_transmitted flag to 1 so that USB task will send message to PC
+					message_transmitted_flag = 1;
+					
+					i=0;
+		
+					data[i++] =  hcan1.pTxMsg->StdId;
+					data[i++] = (hcan1.pTxMsg->StdId) >> 8;
+					data[i++] =  hcan1.pTxMsg->DLC;
+			
+					for(; i<11; i++)
+					{
+					data[i] = hcan1.pTxMsg->Data[i-3];
+					}
+				
+				
+					if(USBD_OK == USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, data, sizeof(data)))
+					{
+					
+					}
+					else
+					{
+						
+					}
+		
+			}
+
+			vTaskDelayUntil(&xLastWakeTime,xFrequency);
+	
+			
+		}
+
+}
+
 /*
 Task: 			 vTask_ControlLamps	
 Parameters:  void
@@ -439,12 +573,21 @@ void vTask_ControlLamps(void *parameters)
 {
 	uint8_t data[11];
 	int i=0;
-			
+	TickType_t xLastWakeTime;
+  const TickType_t xFrequency = 50;
+
+  // Initialise the xLastWakeTime variable with the current time.
+  xLastWakeTime = xTaskGetTickCount();
+	
 	for(;;)	//run task continuously
 	{
 		if(hcan1.pRxMsg->StdId==MSG_INT_EXT_LIGHT)
 		{	
-				/* For high beam */
+			
+			//set message_received_flag to 1 so that USB task can send this message to PC
+			message_received_flag = 1;
+			
+			/* For high beam */
 			if(hcan1.pRxMsg->Data[0] & SIGNAL_HIGH_BEAM){
 				HAL_GPIO_WritePin(GPIOD, LAMP_HIGH_BEAM, GPIO_PIN_SET);
 			}
@@ -541,56 +684,79 @@ void vTask_ControlLamps(void *parameters)
 			}
 			
 			
+				i=0;
+		
+				data[i++] =  hcan1.pRxMsg->StdId;
+				data[i++] = (hcan1.pRxMsg->StdId) >> 8;
+				data[i++] =  hcan1.pRxMsg->DLC;
+			
+				for(; i<11; i++)
+				{
+					data[i] = hcan1.pRxMsg->Data[i-3];
+				}
 				
-		}
+				if(USBD_OK == USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, data, sizeof(data)))
+				{
+				//HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+				}
+				else
+				{
+				//HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+				}
+			}							
+		
+		vTaskDelayUntil(&xLastWakeTime, xFrequency);
 	
 	}
 	
 }
 
 /* USER CODE END 4 */
+/*
+Task: 			 vTask_SendDataToPc	
+Parameters:  void
+Return: 		 void
+Description: This FreeRTOS thread sends all CAN messages seen on CAN bus to PC for analysis.
+*/
+void vTask_SendDataToPc(void *parameters)
+{
+	 /* init code for USB_DEVICE */
+  
+	
+	//Format: ID-Byte1, ID-Byte2, DLC, Bytes-0 to 7
+	//uint8_t data[11]= {0x50, 0x03, 2, 0, 10, 20, 30, 40, 50, 60, 70};
+	//int i=0;
+	
+	uint8_t data[11];
+	int i=0;
+	
+	
+  for(;;)
+  {
+			
+			if(message_received_flag)
+			{	
+				
+				message_received_flag = 0;
+			}
+			
+			
+			if(message_transmitted_flag)
+			{
+				
+				
+				message_transmitted_flag = 0;
+			}
+    
+		vTaskDelay(10);
+  }
+
+}
 
 /* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
 {
-  /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
-
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
-	
-	//Format: ID-Byte1, ID-Byte2, DLC, Bytes-0 to 7
-	uint8_t data[11] = {0x50,0x03,0x8,0x99,0xCC,0xFF,0x00,0x22,0x33,0x66,0x99};
-	int i=0;
-	
-  for(;;)
-  {
-		/*
-		i=0;
-		
-		data[i++] = (hcan1.pRxMsg->StdId) >> 8;
-		data[i++] =  hcan1.pRxMsg->StdId;
-		data[i++] =  hcan1.pRxMsg->DLC;
-			
-		for(; i<12; i++)
-		{
-				data[i] = hcan1.pRxMsg->Data[i];
-		}
-		*/
-		
-		if(USBD_OK == USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, data, sizeof(data)))
-		{
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
-		}
-		else
-		{
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
-		}
-		
-    
-		osDelay(100);
-  }
-  /* USER CODE END 5 */ 
+ 
 }
 
 #ifdef USE_FULL_ASSERT

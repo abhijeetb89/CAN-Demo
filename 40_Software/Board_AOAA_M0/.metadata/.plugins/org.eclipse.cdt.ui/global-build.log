@@ -1,0 +1,6 @@
+02:02:53 **** Incremental Build of configuration Debug for project CAN ****
+make -r all 
+make: Nothing to be done for `all'.
+02:02:59 **** Incremental Build of configuration Debug for project CAN ****
+make -r all 
+make: Nothing to be done for `all'.

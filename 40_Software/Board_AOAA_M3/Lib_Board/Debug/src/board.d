@@ -12,7 +12,22 @@ src/board.o src/board.d: ../src/board.c \
  E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc/lpc17xx_i2c.h \
  E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc/lpc17xx_ssp.h \
  E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc/lpc17xx_adc.h \
- E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/board.h
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/board.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/inet.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/opt.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\port/lwipopts.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/debug.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/arch.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\port/arch/cc.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/eadebug.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/board.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/def.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/ip_addr.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/init.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/netif.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/err.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/pbuf.h \
+ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/ip.h
 
 E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc/lpc17xx.h:
 
@@ -41,3 +56,33 @@ E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc/lpc17xx_
 E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\inc/lpc17xx_adc.h:
 
 E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/board.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/inet.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/opt.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\port/lwipopts.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/debug.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/arch.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\port/arch/cc.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/eadebug.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\inc/board.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/def.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/ip_addr.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/init.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/netif.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/err.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include/lwip/pbuf.h:
+
+E:\Special\ Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_lwip\src\include\ipv4/lwip/ip.h:

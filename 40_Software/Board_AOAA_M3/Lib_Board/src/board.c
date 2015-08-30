@@ -30,7 +30,13 @@
 #include "lpc17xx_adc.h"
 #include "board.h"
 
+#include "lwip/inet.h"
+#include "lwip/init.h"
+#include "lwip/netif.h"
+#include "lwip/ip.h"
 
+err_t ethernetif_init(struct netif *netif);
+void ethernetif_poll(void);
 
 /******************************************************************************
  * Defines and typedefs
@@ -53,7 +59,7 @@
  * Local variables
  *****************************************************************************/
 
-
+static struct netif _eth0If;
 
 /*
  * UART receive buffer
@@ -445,4 +451,94 @@ void can1_pinConfig(void)
 	PINSEL_ConfigPin(&PinCfg);
 	PinCfg.Pinnum = 1;
 	PINSEL_ConfigPin(&PinCfg);
+}
+
+/******************************************************************************
+ *
+ * Description:
+ *   Initialize EMAC
+ *
+ *****************************************************************************/
+void emac_pinConfig(void)
+{
+  /* pin configuration */
+  PINSEL_CFG_Type PinCfg;
+
+  /*
+   * Enable P1 Ethernet Pins:
+   * P1.0 - ENET_TXD0
+   * P1.1 - ENET_TXD1
+   * P1.4 - ENET_TX_EN
+   * P1.8 - ENET_CRS
+   * P1.9 - ENET_RXD0
+   * P1.10 - ENET_RXD1
+   * P1.14 - ENET_RX_ER
+   * P1.15 - ENET_REF_CLK
+   * P1.16 - ENET_MDC
+   * P1.17 - ENET_MDIO
+   */
+  PinCfg.Funcnum = 1;
+  PinCfg.OpenDrain = 0;
+  PinCfg.Pinmode = 0;
+  PinCfg.Portnum = 1;
+
+  PinCfg.Pinnum = 0;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 1;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 4;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 8;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 9;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 10;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 14;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 15;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 16;
+  PINSEL_ConfigPin(&PinCfg);
+  PinCfg.Pinnum = 17;
+  PINSEL_ConfigPin(&PinCfg);
+}
+
+
+
+/******************************************************************************
+ *
+ * Description:
+ *   Initialize the network interface
+ *
+ *****************************************************************************/
+int net_init(uint8_t* ip, uint8_t* mask, uint8_t* gateway)
+{
+  struct ip_addr ipaddr, netmask, gw;
+
+  emac_pinConfig();
+
+  lwip_init();
+
+  IP4_ADDR(&ipaddr, ip[0],ip[1],ip[2],ip[3]);
+  IP4_ADDR(&gw, gateway[0],gateway[1],gateway[2],gateway[3]);
+  IP4_ADDR(&netmask, mask[0],mask[1],mask[2],mask[3]);
+
+  if (netif_add(&_eth0If, &ipaddr, &netmask, &gw, NULL, ethernetif_init,
+      ip_input) == NULL)
+  {
+    return -1;
+  }
+
+  netif_set_default(&_eth0If);
+  netif_set_up(&_eth0If);
+
+
+
+  return 0;
+}
+
+void net_task(void)
+{
+  ethernetif_poll();
 }

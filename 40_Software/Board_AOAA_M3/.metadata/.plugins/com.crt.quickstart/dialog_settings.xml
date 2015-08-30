@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
-		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_FreeRTOS"/>
-			<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_Board"/>
-			<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_MCU"/>
-			<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_CMSISv2p00_LPC17xx"/>
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value=""/>
-			<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_CMSISv2p00_LPC17xx.zip"/>
+			<item value="E:\NXP\AOA\aoa_board_130410.zip"/>
 		</list>
 	</section>
 	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
-		<item value="E:\NXP\AOA\aoa_board_130410\Base Board\Lib_FreeRTOS" key="dirname"/>
+		<item value="E:\NXP\AOA" key="dirname"/>
 	</section>
 </section>

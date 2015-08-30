@@ -1,0 +1,24 @@
+/*
+ * can_handler.c
+ *
+ *  Created on: 24.05.2015
+ *      Author: Abhijeet
+ */
+
+#include "can_handler.h"
+
+void can_handler_init()
+{
+
+}
+
+void can_handler_send()
+{
+
+}
+
+void can_handler_receive()
+{
+
+}
+

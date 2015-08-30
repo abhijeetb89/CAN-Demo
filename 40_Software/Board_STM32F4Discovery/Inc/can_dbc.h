@@ -12,6 +12,7 @@
 #define MSG_Interior_Temperature 0x300
 #define MSG_Ambient_Brightness   0x400
 #define MSG_Airbag_Release 			 0x50
+#define MSG_Engine_Status 			 0x150	 
 	 
 /* DLCs */
 #define DLC_INT_EXT_LIGHT		 		 2
@@ -20,6 +21,7 @@
 #define DLC_Interior_Temperature 2
 #define DLC_Ambient_Brightness   2
 #define DLC_Airbag_Release 			 1
+#define DLC_Engine_Status 			 1 
 	 
 
 /* Signals */
@@ -40,6 +42,7 @@
 #define SIGNAL_VEHICLE_SPEED						0x01
 #define SIGNAL_PARKING_SENSOR_REAR			0x01
 #define SIGNAL_AIRBAG_RELEASE						0x01	 
+#define SIGNAL_ENGINE_STATUS						0x01
 
 #ifdef __cplusplus
 }

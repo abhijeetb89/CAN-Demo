@@ -38,7 +38,7 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN 0 */
-
+extern CAN_HandleTypeDef hcan;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -71,6 +71,32 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /* USER CODE BEGIN 1 */
-
+void CEC_CAN_IRQHandler(void)
+{
+	
+		/* Store ID */
+			hcan.pRxMsg->StdId = ((CAN->sFIFOMailBox[0].RIR) & (0xFFE00000))>> 21;
+			
+		/* Store DLC */
+	    hcan.pRxMsg->DLC = (CAN->sFIFOMailBox[0].RDTR & (0xF));
+			
+		/* Store Data Bytes */
+			hcan.pRxMsg->Data[0] = (CAN->sFIFOMailBox[0].RDLR & 0x000000FF);
+	    hcan.pRxMsg->Data[1] = (CAN->sFIFOMailBox[0].RDLR & 0x0000FF00)>>8;
+	    hcan.pRxMsg->Data[2] = (CAN->sFIFOMailBox[0].RDLR & 0x00FF0000)>>16;
+	    hcan.pRxMsg->Data[3] = (CAN->sFIFOMailBox[0].RDLR & 0xFF000000)>>24;
+			hcan.pRxMsg->Data[4] = (CAN->sFIFOMailBox[0].RDHR & 0x000000FF);
+	    hcan.pRxMsg->Data[5] = (CAN->sFIFOMailBox[0].RDHR & 0x0000FF00)>>8;
+	    hcan.pRxMsg->Data[6] = (CAN->sFIFOMailBox[0].RDHR & 0x00FF0000)>>16;
+	    hcan.pRxMsg->Data[7] = (CAN->sFIFOMailBox[0].RDHR & 0xFF00000)>>24;
+	
+			/* Store time of reception of message */
+	    //hcan.pRxMsg->RxTime = (CAN->sFIFOMailBox[0].RDTR & 0xFFFF0000) >> 16;
+	    
+			/* Clear buffer */
+		  CAN->RF0R |= CAN_RF0R_RFOM0;
+	
+	
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

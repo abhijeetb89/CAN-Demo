@@ -1,0 +1,28 @@
+/*
+ * can_handler.c
+ *
+ *  Created on: 23.05.2015
+ *      Author: Abhijeet
+ */
+
+#include "can_handler.h"
+#include "can.h"
+
+void can_handler_init()
+{
+	CAN_Init(0x2301);	//set baud rate of 500kbps
+}
+
+void can_handler_send()
+{
+
+}
+void can_handler_receive()
+{
+
+}
+void CAN_IRQHandler()
+{
+
+}
+

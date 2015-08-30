@@ -1395,94 +1395,94 @@ Status CAN_SendMsg (LPC_CAN_TypeDef *CANx, CAN_MSG_Type *CAN_Msg)
 		 CANx->CMR = 0x21;
 		 return SUCCESS;
 	}
-	//check status of Transmit Buffer 2
-	else if((CANx->SR & 0x00000004)>>10)
-	{
-		/* Transmit Channel 2 is available */
-		/* Write frame informations and frame data into its CANxTFI2,
-		 * CANxTID2, CANxTDA2, CANxTDB2 register */
-	  // EA bugfix: data length code is bits 16-19 and not 12-15
-	  //CANx->TFI2 &= ~0x000F000;
-	  CANx->TFI2 &= ~0x00F0000;
-		CANx->TFI2 |= (CAN_Msg->len)<<16;
-		if(CAN_Msg->type == REMOTE_FRAME)
-		{
-			CANx->TFI2 |= (1<<30); //set bit RTR
-		}
-		else
-		{
-			CANx->TFI2 &= ~(1<<30);
-		}
-		if(CAN_Msg->format == EXT_ID_FORMAT)
-		{
-			CANx->TFI2 |= (1<<31); //set bit FF
-		}
-		else
-		{
-			CANx->TFI2 &= ~(1<<31);
-		}
-
-		/* Write CAN ID*/
-		CANx->TID2 = CAN_Msg->id;
-
-		/*Write first 4 data bytes*/
-		data = (CAN_Msg->dataA[0])|(((CAN_Msg->dataA[1]))<<8)|((CAN_Msg->dataA[2])<<16)|((CAN_Msg->dataA[3])<<24);
-//		CANx->TDA2 = *((uint32_t *) &(CAN_Msg->dataA));
-		CANx->TDA2 = data;
-
-		/*Write second 4 data bytes*/
-		data = (CAN_Msg->dataB[0])|(((CAN_Msg->dataB[1]))<<8)|((CAN_Msg->dataB[2])<<16)|((CAN_Msg->dataB[3])<<24);
-//		CANx->TDB2 = *((uint32_t *) &(CAN_Msg->dataB));
-		CANx->TDB2 = data;
-
-		/*Write transmission request*/
-		CANx->CMR = 0x41;
-		return SUCCESS;
-	}
-	//check status of Transmit Buffer 3
-	else if ((CANx->SR & 0x00000004)>>18)
-	{
-		/* Transmit Channel 3 is available */
-		/* Write frame informations and frame data into its CANxTFI3,
-		 * CANxTID3, CANxTDA3, CANxTDB3 register */
-	  // EA bugfix: data length code is bits 16-19 and not 12-15
-		//CANx->TFI3 &= ~0x000F000;
-	  CANx->TFI3 &= ~0x00F0000;
-		CANx->TFI3 |= (CAN_Msg->len)<<16;
-		if(CAN_Msg->type == REMOTE_FRAME)
-		{
-			CANx->TFI3 |= (1<<30); //set bit RTR
-		}
-		else
-		{
-			CANx->TFI3 &= ~(1<<30);
-		}
-		if(CAN_Msg->format == EXT_ID_FORMAT)
-		{
-			CANx->TFI3 |= (1<<31); //set bit FF
-		}
-		else
-		{
-			CANx->TFI3 &= ~(1<<31);
-		}
-
-		/* Write CAN ID*/
-		CANx->TID3 = CAN_Msg->id;
-
-		/*Write first 4 data bytes*/
-		data = (CAN_Msg->dataA[0])|(((CAN_Msg->dataA[1]))<<8)|((CAN_Msg->dataA[2])<<16)|((CAN_Msg->dataA[3])<<24);
-//		CANx->TDA3 = *((uint32_t *) &(CAN_Msg->dataA));
-		CANx->TDA3 = data;
-
-		/*Write second 4 data bytes*/
-		data = (CAN_Msg->dataB[0])|(((CAN_Msg->dataB[1]))<<8)|((CAN_Msg->dataB[2])<<16)|((CAN_Msg->dataB[3])<<24);
-//		CANx->TDB3 = *((uint32_t *) &(CAN_Msg->dataB));
-		CANx->TDB3 = data;
-
-		/*Write transmission request*/
-		CANx->CMR = 0x81;
-		return SUCCESS;
-	}
+//	//check status of Transmit Buffer 2
+//	else if((CANx->SR & 0x00000004)>>10)
+//	{
+//		/* Transmit Channel 2 is available */
+//		/* Write frame informations and frame data into its CANxTFI2,
+//		 * CANxTID2, CANxTDA2, CANxTDB2 register */
+//	  // EA bugfix: data length code is bits 16-19 and not 12-15
+//	  //CANx->TFI2 &= ~0x000F000;
+//	  CANx->TFI2 &= ~0x00F0000;
+//		CANx->TFI2 |= (CAN_Msg->len)<<16;
+//		if(CAN_Msg->type == REMOTE_FRAME)
+//		{
+//			CANx->TFI2 |= (1<<30); //set bit RTR
+//		}
+//		else
+//		{
+//			CANx->TFI2 &= ~(1<<30);
+//		}
+//		if(CAN_Msg->format == EXT_ID_FORMAT)
+//		{
+//			CANx->TFI2 |= (1<<31); //set bit FF
+//		}
+//		else
+//		{
+//			CANx->TFI2 &= ~(1<<31);
+//		}
+//
+//		/* Write CAN ID*/
+//		CANx->TID2 = CAN_Msg->id;
+//
+//		/*Write first 4 data bytes*/
+//		data = (CAN_Msg->dataA[0])|(((CAN_Msg->dataA[1]))<<8)|((CAN_Msg->dataA[2])<<16)|((CAN_Msg->dataA[3])<<24);
+////		CANx->TDA2 = *((uint32_t *) &(CAN_Msg->dataA));
+//		CANx->TDA2 = data;
+//
+//		/*Write second 4 data bytes*/
+//		data = (CAN_Msg->dataB[0])|(((CAN_Msg->dataB[1]))<<8)|((CAN_Msg->dataB[2])<<16)|((CAN_Msg->dataB[3])<<24);
+////		CANx->TDB2 = *((uint32_t *) &(CAN_Msg->dataB));
+//		CANx->TDB2 = data;
+//
+//		/*Write transmission request*/
+//		CANx->CMR = 0x41;
+//		return SUCCESS;
+//	}
+//	//check status of Transmit Buffer 3
+//	else if ((CANx->SR & 0x00000004)>>18)
+//	{
+//		/* Transmit Channel 3 is available */
+//		/* Write frame informations and frame data into its CANxTFI3,
+//		 * CANxTID3, CANxTDA3, CANxTDB3 register */
+//	  // EA bugfix: data length code is bits 16-19 and not 12-15
+//		//CANx->TFI3 &= ~0x000F000;
+//	  CANx->TFI3 &= ~0x00F0000;
+//		CANx->TFI3 |= (CAN_Msg->len)<<16;
+//		if(CAN_Msg->type == REMOTE_FRAME)
+//		{
+//			CANx->TFI3 |= (1<<30); //set bit RTR
+//		}
+//		else
+//		{
+//			CANx->TFI3 &= ~(1<<30);
+//		}
+//		if(CAN_Msg->format == EXT_ID_FORMAT)
+//		{
+//			CANx->TFI3 |= (1<<31); //set bit FF
+//		}
+//		else
+//		{
+//			CANx->TFI3 &= ~(1<<31);
+//		}
+//
+//		/* Write CAN ID*/
+//		CANx->TID3 = CAN_Msg->id;
+//
+//		/*Write first 4 data bytes*/
+//		data = (CAN_Msg->dataA[0])|(((CAN_Msg->dataA[1]))<<8)|((CAN_Msg->dataA[2])<<16)|((CAN_Msg->dataA[3])<<24);
+////		CANx->TDA3 = *((uint32_t *) &(CAN_Msg->dataA));
+//		CANx->TDA3 = data;
+//
+//		/*Write second 4 data bytes*/
+//		data = (CAN_Msg->dataB[0])|(((CAN_Msg->dataB[1]))<<8)|((CAN_Msg->dataB[2])<<16)|((CAN_Msg->dataB[3])<<24);
+////		CANx->TDB3 = *((uint32_t *) &(CAN_Msg->dataB));
+//		CANx->TDB3 = data;
+//
+//		/*Write transmission request*/
+//		CANx->CMR = 0x81;
+//		return SUCCESS;
+//	}
 	else
 	{
 		return ERROR;

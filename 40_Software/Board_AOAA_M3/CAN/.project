@@ -3,6 +3,8 @@
 	<name>CAN</name>
 	<comment></comment>
 	<projects>
+		<project>Lib_Board</project>
+		<project>Lib_MCU</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -1,0 +1,1522 @@
+Archive member included because of file (symbol)
+
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+                              ./src/main.o (trimpot_init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                              ./src/main.o (can_handler_init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o) (ADC_Init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o) (CAN_Init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o) (CLKPWR_SetPCLKDiv)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o) (I2C_Init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o) (check_failed)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o) (PINSEL_ConfigPin)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o) (SSP_Init)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o) (UART_TxCmd)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/main.o (SystemInit)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+                              ./src/cr_startup_lpc175x_6x.o (vPortSVCHandler)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+                              ./src/main.o (xTaskGenericCreate)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o) (pvPortMalloc)
+E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o) (vListInitialise)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o) (memset)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o) (strlen)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+                              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o) (strncpy)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o) (__aeabi_lowlevel_memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+CAN_Rx_Msg          0x10              E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+FULLCAN_ENABLE      0x1               E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .text.SVCall_Handler
+                0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text.PendSV_Handler
+                0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text.SysTick_Handler
+                0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .crp           0x00000000        0x4 ./src/crp.o
+ .debug_info    0x00000000       0x3f ./src/crp.o
+ .debug_abbrev  0x00000000       0x36 ./src/crp.o
+ .debug_aranges
+                0x00000000       0x18 ./src/crp.o
+ .debug_macro   0x00000000       0x1a ./src/crp.o
+ .debug_macro   0x00000000      0x87a ./src/crp.o
+ .debug_macro   0x00000000       0x34 ./src/crp.o
+ .debug_line    0x00000000       0x78 ./src/crp.o
+ .debug_str     0x00000000     0x2569 ./src/crp.o
+ .comment       0x00000000       0x71 ./src/crp.o
+ .ARM.attributes
+                0x00000000       0x33 ./src/crp.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .group         0x00000000        0x8 ./src/main.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .debug_macro   0x00000000      0x87a ./src/main.o
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .bss           0x00000000      0x234 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x30 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rxq_put  0x00000000       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rxq_get  0x00000000       0x64 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rxq_isEmpty
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uartRecvCb
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.console_init
+                0x00000000       0x58 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.console_send
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.console_sendString
+                0x00000000       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.console_receive
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.i2c0_init
+                0x00000000       0x44 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.ssp1_init
+                0x00000000       0x64 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uart_init
+                0x00000000       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uart_send
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uart_sendString
+                0x00000000       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uart_receive
+                0x00000000       0x44 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.rf_uart_recvIsEmpty
+                0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.can1_pinConfig
+                0x00000000       0x2c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.emac_pinConfig
+                0x00000000       0x94 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.net_init
+                0x00000000       0xd0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .text.net_task
+                0x00000000        0xc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00000000      0x32a E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000      0x49d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00000000       0x22 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_DeInit
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GetData
+                0x00000000       0x2c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_BurstCmd
+                0x00000000       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_PowerdownCmd
+                0x00000000       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_EdgeStartConfig
+                0x00000000       0x5c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetData
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetStatus
+                0x00000000       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .data          0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_DeInit
+                0x00000000       0x50 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_SetupAFLUT
+                0x00000000      0x884 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_LoadExplicitEntry
+                0x00000000      0x4e0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_LoadFullCANEntry
+                0x00000000      0x480 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_LoadGroupEntry
+                0x00000000      0x478 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_RemoveEntry
+                0x00000000      0x678 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.FCAN_ReadObj
+                0x00000000      0x18c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_GetCTRLStatus
+                0x00000000       0x80 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_GetCRStatus
+                0x00000000       0x68 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_SetAFMode
+                0x00000000       0x8c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_ModeConfig
+                0x00000000      0x1c8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .text.CAN_IntHandler
+                0x00000000       0x54 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x49d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000      0x2fe E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00000000       0xcb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ COMMON         0x00000000        0x1 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_Sleep
+                0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x24 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_PowerDown
+                0x00000000       0x24 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x24 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .bss           0x00000000       0x24 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x30 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.NVIC_DisableIRQ
+                0x00000000       0x34 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_getNum
+                0x00000000       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Start
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Stop
+                0x00000000       0x30 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SendByte
+                0x00000000       0x4c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_GetByte
+                0x00000000       0x54 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_IntCmd
+                0x00000000       0x84 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MasterHandler
+                0x00000000      0x39c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveHandler
+                0x00000000      0x1b0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .rodata        0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SetClock
+                0x00000000       0xa4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_DeInit
+                0x00000000       0x80 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Init
+                0x00000000       0xa4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Cmd  0x00000000       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MasterTransferData
+                0x00000000      0x300 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveTransferData
+                0x00000000      0x218 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SetOwnSlaveAddr
+                0x00000000       0xfc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeConfig
+                0x00000000       0x84 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeCmd
+                0x00000000       0x7c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorGetDatabuffer
+                0x00000000       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C0_StdIntHandler
+                0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C1_StdIntHandler
+                0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C2_StdIntHandler
+                0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_info    0x00000000      0xbfb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_abbrev  0x00000000      0x27c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_aranges
+                0x00000000       0xd0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_ranges  0x00000000       0xc0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0xa8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x18c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2fe E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x149 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0xcb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_line    0x00000000      0x6f9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_str     0x00000000     0xa5b9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_frame   0x00000000      0x35c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .ARM.attributes
+                0x00000000       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000       0x40 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_SetI2C0Pins
+                0x00000000       0x38 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x143 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .bss           0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_getNum
+                0x00000000       0x38 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_IntHandler
+                0x00000000      0x2c4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .rodata        0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_SetClock
+                0x00000000       0xc4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DeInit
+                0x00000000       0x5c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_Init
+                0x00000000       0xd8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ConfigStructInit
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_Cmd  0x00000000       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_LoopBackCmd
+                0x00000000       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_SlaveOutputCmd
+                0x00000000       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_SendData
+                0x00000000       0x40 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ReceiveData
+                0x00000000       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ReadWrite
+                0x00000000      0x3c4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetStatus
+                0x00000000       0x74 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_IntConfig
+                0x00000000       0x84 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetRawIntStatus
+                0x00000000       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetIntStatus
+                0x00000000       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ClearIntPending
+                0x00000000       0x54 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DMACmd
+                0x00000000       0x8c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP0_StdIntHandler
+                0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP1_StdIntHandler
+                0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_info    0x00000000      0x7d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_abbrev  0x00000000      0x1fb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_aranges
+                0x00000000       0xb8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_ranges  0x00000000       0xa8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x9f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2a9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2fe E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0xcb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_line    0x00000000      0x631 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_str     0x00000000     0xa504 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_frame   0x00000000      0x2e0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .ARM.attributes
+                0x00000000       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.uart_set_divisors
+                0x00000000      0x214 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .rodata        0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_DeInit
+                0x00000000       0x98 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_Init
+                0x00000000      0x2ec E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ConfigStructInit
+                0x00000000       0x2c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_SendData
+                0x00000000       0x68 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ReceiveData
+                0x00000000       0x64 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ForceBreak
+                0x00000000       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDAInvtInputCmd
+                0x00000000       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDACmd
+                0x00000000       0x74 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IrDAPulseDivConfig
+                0x00000000       0x9c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_IntConfig
+                0x00000000      0x184 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_GetLineStatus
+                0x00000000       0x64 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_CheckBusy
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FIFOConfig
+                0x00000000      0x158 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FIFOConfigStructInit
+                0x00000000       0x2c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_ABCmd
+                0x00000000      0x134 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_TxCmd
+                0x00000000       0xc8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemForcePinState
+                0x00000000       0xac E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemConfigMode
+                0x00000000       0xb8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_FullModemGetStatus
+                0x00000000       0x30 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485Config
+                0x00000000      0x184 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485ReceiverCmd
+                0x00000000       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485Send
+                0x00000000       0x7c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485SendSlvAddr
+                0x00000000       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_RS485SendData
+                0x00000000       0x24 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_Send
+                0x00000000       0xe8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_SendString
+                0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_Receive
+                0x00000000       0xb8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART_SetupCbs
+                0x00000000       0x8c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART0_StdIntHandler
+                0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART2_StdIntHandler
+                0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .text.UART3_StdIntHandler
+                0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0x55 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000      0x2fe E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x00000000       0xcb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xbc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .rodata        0x00000000        0x4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0xa3 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x12 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x1e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000      0x15b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x42 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00000000       0x56 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x862 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x22 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0xca E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0xa3 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x12 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x1e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000      0x15b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x42 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00000000       0x56 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x862 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0xca E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0xa3 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x12 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x1e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000      0x15b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x42 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00000000       0x56 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .group         0x00000000        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .data          0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .bss           0x00000000        0x0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x862 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x12d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x2e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x5b2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x7af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0xca E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0xa3 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x12 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x1e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000      0x15b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .debug_macro   0x00000000       0x42 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .text.strlen   0x00000000       0x4a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x00000000       0x33 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memcpy
+                0x00000000       0x34 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memmove
+                0x00000000       0x1c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memclr
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset
+                0x00000000        0xa c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/crp.o
+LOAD ./src/main.o
+LOAD E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a
+LOAD E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a
+LOAD E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a
+LOAD E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x2158
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x2158 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0xc SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x2158 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000010 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x15b0 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text.ResetISR
+                0x000000f4       0x54 ./src/cr_startup_lpc175x_6x.o
+                0x000000f4                ResetISR
+ .text.NMI_Handler
+                0x00000148        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000148                NMI_Handler
+ .text.HardFault_Handler
+                0x00000150        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000150                HardFault_Handler
+ .text.MemManage_Handler
+                0x00000158        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000158                MemManage_Handler
+ .text.BusFault_Handler
+                0x00000160        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000160                BusFault_Handler
+ .text.UsageFault_Handler
+                0x00000168        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000168                UsageFault_Handler
+ .text.DebugMon_Handler
+                0x00000170        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000170                DebugMon_Handler
+ .text.IntDefaultHandler
+                0x00000178        0x8 ./src/cr_startup_lpc175x_6x.o
+                0x00000178                TIMER2_IRQHandler
+                0x00000178                RIT_IRQHandler
+                0x00000178                I2C0_IRQHandler
+                0x00000178                USBActivity_IRQHandler
+                0x00000178                PWM1_IRQHandler
+                0x00000178                I2C1_IRQHandler
+                0x00000178                EINT2_IRQHandler
+                0x00000178                EINT3_IRQHandler
+                0x00000178                CANActivity_IRQHandler
+                0x00000178                TIMER3_IRQHandler
+                0x00000178                UART0_IRQHandler
+                0x00000178                IntDefaultHandler
+                0x00000178                PLL0_IRQHandler
+                0x00000178                CAN_IRQHandler
+                0x00000178                PLL1_IRQHandler
+                0x00000178                SSP0_IRQHandler
+                0x00000178                I2S_IRQHandler
+                0x00000178                I2C2_IRQHandler
+                0x00000178                RTC_IRQHandler
+                0x00000178                TIMER0_IRQHandler
+                0x00000178                SPI_IRQHandler
+                0x00000178                EINT1_IRQHandler
+                0x00000178                TIMER1_IRQHandler
+                0x00000178                UART2_IRQHandler
+                0x00000178                ADC_IRQHandler
+                0x00000178                SSP1_IRQHandler
+                0x00000178                USB_IRQHandler
+                0x00000178                BOD_IRQHandler
+                0x00000178                WDT_IRQHandler
+                0x00000178                QEI_IRQHandler
+                0x00000178                EINT0_IRQHandler
+                0x00000178                DMA_IRQHandler
+                0x00000178                UART3_IRQHandler
+                0x00000178                MCPWM_IRQHandler
+                0x00000178                ENET_IRQHandler
+ .text.main     0x00000180       0x98 ./src/main.o
+                0x00000180                main
+ .text.task_Can_Send_Velocity
+                0x00000218       0x38 ./src/main.o
+                0x00000218                task_Can_Send_Velocity
+ .text.task_Can_Rcv_Messages
+                0x00000250       0x2c ./src/main.o
+                0x00000250                task_Can_Rcv_Messages
+ .text.trimpot_init
+                0x0000027c       0x4c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+                0x0000027c                trimpot_init
+ .text.trimpot_get
+                0x000002c8       0x30 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+                0x000002c8                trimpot_get
+ .text.UART1_IRQHandler
+                0x000002f8        0xc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+                0x000002f8                UART1_IRQHandler
+ .text.can_handler_init
+                0x00000304       0x54 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                0x00000304                can_handler_init
+ .text.can_handler_send
+                0x00000358       0x84 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                0x00000358                can_handler_send
+ .text.can_handler_receive
+                0x000003dc       0x8c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                0x000003dc                can_handler_receive
+ .text.can_rx_int_callback
+                0x00000468       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                0x00000468                can_rx_int_callback
+ .text.ADC_Init
+                0x00000480       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00000480                ADC_Init
+ .text.ADC_StartCmd
+                0x000004f8       0x7c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000004f8                ADC_StartCmd
+ .text.ADC_IntConfig
+                0x00000574       0x98 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00000574                ADC_IntConfig
+ .text.ADC_ChannelCmd
+                0x0000060c       0x5c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x0000060c                ADC_ChannelCmd
+ .text.ADC_ChannelGetData
+                0x00000668       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00000668                ADC_ChannelGetData
+ .text.ADC_ChannelGetStatus
+                0x000006b0       0x7c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000006b0                ADC_ChannelGetStatus
+ .text.CAN_SetBaudRate
+                0x0000072c       0xf4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x0000072c                CAN_SetBaudRate
+ .text.CAN_Init
+                0x00000820       0xe4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x00000820                CAN_Init
+ .text.CAN_SendMsg
+                0x00000904      0x184 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x00000904                CAN_SendMsg
+ .text.CAN_ReceiveMsg
+                0x00000a88       0xf8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x00000a88                CAN_ReceiveMsg
+ .text.CAN_IRQCmd
+                0x00000b80      0x10c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x00000b80                CAN_IRQCmd
+ .text.CAN_SetupCBS
+                0x00000c8c       0x78 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x00000c8c                CAN_SetupCBS
+ .text.CLKPWR_SetPCLKDiv
+                0x00000d04       0x8c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00000d04                CLKPWR_SetPCLKDiv
+ .text.CLKPWR_GetPCLKSEL
+                0x00000d90       0x4c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00000d90                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x00000ddc       0x64 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00000ddc                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x00000e40       0x58 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00000e40                CLKPWR_ConfigPPWR
+ .text.check_failed
+                0x00000e98        0xc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+                0x00000e98                check_failed
+ .text.PINSEL_SetPinFunc
+                0x00000ea4       0x80 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00000ea4                PINSEL_SetPinFunc
+ .text.PINSEL_SetResistorMode
+                0x00000f24       0x80 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00000f24                PINSEL_SetResistorMode
+ .text.PINSEL_SetOpenDrainMode
+                0x00000fa4       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00000fa4                PINSEL_SetOpenDrainMode
+ .text.PINSEL_ConfigPin
+                0x00001010       0x50 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00001010                PINSEL_ConfigPin
+ .text.getUartNum
+                0x00001060       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00001060                getUartNum
+ .text.UART_GenIntHandler
+                0x000010a8      0x160 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x000010a8                UART_GenIntHandler
+ .text.UART1_StdIntHandler
+                0x00001208       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x00001208                UART1_StdIntHandler
+ .text.SystemInit
+                0x00001218       0xe0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00001218                SystemInit
+ .text          0x000012f8      0x12c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+                0x000012f8                pxPortInitialiseStack
+                0x00001314                vPortSVCHandler
+                0x00001334                vPortStartFirstTask
+                0x00001340                xPortStartScheduler
+                0x0000137c                vPortEndScheduler
+                0x00001380                vPortYieldFromISR
+                0x00001390                vPortEnterCritical
+                0x000013a8                vPortExitCritical
+                0x000013c0                xPortPendSVHandler
+                0x000013fc                xPortSysTickHandler
+ .text          0x00001424      0xa50 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+                0x00001424                xTaskGenericCreate
+                0x000015bc                vTaskDelete
+                0x00001624                uxTaskPriorityGet
+                0x00001640                vTaskPrioritySet
+                0x000016d8                xTaskIsTaskSuspended
+                0x000016fc                vTaskResume
+                0x00001760                xTaskResumeFromISR
+                0x000017d0                vTaskStartScheduler
+                0x0000181c                vTaskEndScheduler
+                0x00001838                vTaskSuspendAll
+                0x0000184c                xTaskGetTickCount
+                0x00001864                xTaskGetTickCountFromISR
+                0x00001870                uxTaskGetNumberOfTasks
+                0x0000187c                vTaskIncrementTick
+                0x00001920                xTaskResumeAll
+                0x000019f4                vTaskDelayUntil
+                0x00001a74                vTaskDelay
+                0x00001b20                vTaskSwitchContext
+                0x00001bb0                vTaskSuspend
+                0x00001c58                vTaskPlaceOnEventList
+                0x00001cb0                xTaskRemoveFromEventList
+                0x00001d24                vTaskSetTimeOutState
+                0x00001d38                xTaskCheckForTimeOut
+                0x00001d9c                vTaskMissedYield
+                0x00001dac                xTaskGetCurrentTaskHandle
+                0x00001db8                vTaskPriorityInherit
+                0x00001e28                vTaskPriorityDisinherit
+ .text          0x00001e74      0x11c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+                0x00001e74                pvPortMalloc
+                0x00001f3c                vPortFree
+                0x00001f80                xPortGetFreeHeapSize
+                0x00001f8c                vPortInitialiseBlocks
+ .text          0x00001f90       0x9c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+                0x00001f90                vListInitialise
+                0x00001fa8                vListInitialiseItem
+                0x00001fb0                vListInsertEnd
+                0x00001fcc                vListInsert
+                0x00002008                vListRemove
+ .text.memset   0x0000202c        0x4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x0000202c                memset
+ .text.__weak_main
+                0x00002030        0x4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                0x00002030                __weak_main
+                0x00002030                __main
+ .text.strncpy  0x00002034       0x58 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+                0x00002034                strncpy
+ .text.__aeabi_memset_lowlevel
+                0x0000208c       0x32 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x0000208c                __aeabi_lowlevel_memset
+ *(.rodata .rodata.* .constdata .constdata.*)
+ *fill*         0x000020be        0x2 
+ .rodata        0x000020c0       0x1c ./src/main.o
+ .rodata        0x000020dc       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .rodata        0x000020f4       0x5c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x000020f4                CAN_BIT_TIME
+ .rodata.str1.4
+                0x00002150        0x8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+                0x00002158                . = ALIGN (0x4)
+
+.glue_7         0x00002158        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00002158        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00002158        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00002158        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00002158        0x0
+ .iplt          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.rel.dyn        0x00002158        0x0
+ .rel.iplt      0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00002158                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002158                __exidx_end = .
+                0x00002158                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00002158
+ FILL mask 0xff
+                0x2007c000                PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+                0x2007c000                PROVIDE (__end_data_RAM2, .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0xc load address 0x00002158
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000000                SystemCoreClock
+ .data          0x10000004        0x4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .data          0x10000008        0x4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+                0x1000000c                . = ALIGN (0x4)
+                0x1000000c                _edata = .
+
+.igot.plt       0x1000000c        0x0 load address 0x00002164
+ .igot.plt      0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.bss_RAM2       0x2007c000        0x0
+                0x2007c000                PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+                0x2007c000                PROVIDE (__end_bss_RAM2, .)
+
+.bss            0x10000010     0x15b0
+                0x10000010                _bss = .
+ *(.bss*)
+ .bss.i.5585    0x10000010        0x4 ./src/main.o
+ .bss           0x10000014       0x3c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                0x10000014                CANAF_FullCAN_cnt
+                0x10000016                CANAF_std_cnt
+                0x10000018                CANAF_gstd_cnt
+                0x1000001a                CANAF_ext_cnt
+                0x1000001c                CANAF_gext_cnt
+ .bss           0x10000050       0x44 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                0x10000050                uartCbsDat
+                0x10000090                pfnModemCbs
+ .bss           0x10000094      0x100 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+                0x10000098                pxCurrentTCB
+ *fill*         0x10000194        0x4 
+ .bss           0x10000198     0x1418 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ *(COMMON)
+ COMMON         0x100015b0       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                0x100015b0                CAN_Rx_Msg
+                0x100015c0                . = ALIGN (0x4)
+                0x100015c0                _ebss = .
+                0x100015c0                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x100015c0        0x0
+                0x100015c0                _noinit = .
+ *(.noinit*)
+                0x100015c0                . = ALIGN (0x4)
+                0x100015c0                _end_noinit = .
+                0x100015c0                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+OUTPUT(CAN.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x6dde
+ .debug_info    0x00000000      0x172 ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x00000172      0x1b0 ./src/main.o
+ .debug_info    0x00000322     0x11b8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_info    0x000014da      0x430 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_info    0x0000190a      0x5c9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_info    0x00001ed3     0x10be E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_info    0x00002f91      0x60c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_info    0x0000359d       0xc5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_info    0x00003662      0x455 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_info    0x00003ab7     0x1230 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_info    0x00004ce7      0x46e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x00005155      0x218 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_info    0x0000536d     0x14c8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_info    0x00006835      0x307 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_info    0x00006b3c      0x2a2 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_abbrev   0x00000000     0x1708
+ .debug_abbrev  0x00000000       0xae ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x000000ae       0xce ./src/main.o
+ .debug_abbrev  0x0000017c      0x325 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_abbrev  0x000004a1      0x18b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_abbrev  0x0000062c      0x163 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_abbrev  0x0000078f      0x1bb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_abbrev  0x0000094a      0x1ae E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x00000af8       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_abbrev  0x00000b64      0x129 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x00000c8d      0x2a8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_abbrev  0x00000f35       0xea E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x0000101f      0x14e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_abbrev  0x0000116d      0x314 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_abbrev  0x00001481      0x1c0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_abbrev  0x00001641       0xc7 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_aranges  0x00000000      0x568
+ .debug_aranges
+                0x00000000       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x00000070       0x30 ./src/main.o
+ .debug_aranges
+                0x000000a0       0xd0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_aranges
+                0x00000170       0x38 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_aranges
+                0x000001a8       0x80 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_aranges
+                0x00000228       0xa8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_aranges
+                0x000002d0       0x58 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_aranges
+                0x00000328       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_aranges
+                0x00000348       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_aranges
+                0x00000390      0x130 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_aranges
+                0x000004c0       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_aranges
+                0x000004e8       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_aranges
+                0x00000508       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_aranges
+                0x00000528       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_aranges
+                0x00000548       0x20 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_ranges   0x00000000      0x490
+ .debug_ranges  0x00000000       0x60 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x00000060       0x20 ./src/main.o
+ .debug_ranges  0x00000080       0xc0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_ranges  0x00000140       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_ranges  0x00000168       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_ranges  0x000001d8       0x98 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_ranges  0x00000270       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_ranges  0x000002b8       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_ranges  0x000002c8       0x38 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x00000300      0x120 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_ranges  0x00000420       0x18 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x00000438       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_ranges  0x00000448       0x48 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+
+.debug_macro    0x00000000     0x722d
+ .debug_macro   0x00000000       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x0000001d      0x87a ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00000897      0x137 ./src/main.o
+ .debug_macro   0x000009ce       0x82 ./src/main.o
+ .debug_macro   0x00000a50       0x1c ./src/main.o
+ .debug_macro   0x00000a6c       0x2e ./src/main.o
+ .debug_macro   0x00000a9a       0x10 ./src/main.o
+ .debug_macro   0x00000aaa      0x12d ./src/main.o
+ .debug_macro   0x00000bd7      0x5b2 ./src/main.o
+ .debug_macro   0x00001189       0x18 ./src/main.o
+ .debug_macro   0x000011a1      0x7af ./src/main.o
+ .debug_macro   0x00001950      0x2d5 ./src/main.o
+ .debug_macro   0x00001c25       0x55 ./src/main.o
+ .debug_macro   0x00001c7a      0x49d ./src/main.o
+ .debug_macro   0x00002117       0x22 ./src/main.o
+ .debug_macro   0x00002139       0x10 ./src/main.o
+ .debug_macro   0x00002149       0x46 ./src/main.o
+ .debug_macro   0x0000218f       0xd0 ./src/main.o
+ .debug_macro   0x0000225f       0xa3 ./src/main.o
+ .debug_macro   0x00002302       0x12 ./src/main.o
+ .debug_macro   0x00002314       0x1e ./src/main.o
+ .debug_macro   0x00002332      0x15b ./src/main.o
+ .debug_macro   0x0000248d       0x42 ./src/main.o
+ .debug_macro   0x000024cf       0x56 ./src/main.o
+ .debug_macro   0x00002525      0x32a ./src/main.o
+ .debug_macro   0x0000284f      0x1bf E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00002a0e      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x0000327c       0x1c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003298      0x2d5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x0000356d      0x143 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x000036b0       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x000036f6      0x192 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003888      0x2af E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003b37       0xf4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003c2b      0x146 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003d71       0x16 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003d87       0x52 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003dd9       0x9a E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003e73       0x22 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003e95       0x16 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003eab       0x5e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00003f09      0x47b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00004384       0x58 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x000043dc      0x17b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00004557       0xd6 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x0000462d       0x46 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00004673       0x10 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00004683       0x76 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x000046f9       0x34 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x0000472d       0x4f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x0000477c      0x11d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_macro   0x00004899       0xa9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00004942      0x149 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_macro   0x00004a8b       0x9f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004b2a       0xee E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004c18      0x2fe E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004f16       0xcb E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004fe1       0x9f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_macro   0x00005080       0x8d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x0000510d      0x2f8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00005405       0x5a E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x0000545f       0x4f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x000054ae       0xc5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00005573       0x8d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00005600       0x9f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x0000569f      0x324 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_macro   0x000059c3      0x12b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00005aee      0x86e E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000635c      0x12c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00006488      0x862 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00006cea       0x16 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00006d00       0xca E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_macro   0x00006dca      0x179 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00006f43       0xa0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00006fe3       0x16 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_macro   0x00006ff9      0x11d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x00007116       0x28 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_macro   0x0000713e       0xef E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_line     0x00000000     0x3f86
+ .debug_line    0x00000000      0x136 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x00000136      0x4b9 ./src/main.o
+ .debug_line    0x000005ef      0x702 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_line    0x00000cf1      0x326 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_line    0x00001017      0x425 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_line    0x0000143c      0xa47 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_line    0x00001e83      0x2f6 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_line    0x00002179      0x184 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_line    0x000022fd      0x290 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_line    0x0000258d      0x987 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_line    0x00002f14      0x1d8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x000030ec      0x2f9 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_line    0x000033e5      0x586 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_line    0x0000396b      0x32b E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_line    0x00003c96      0x2f0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_str      0x00000000    0x17e16
+ .debug_str     0x00000000     0x25c1 ./src/cr_startup_lpc175x_6x.o
+                               0x25d3 (size before relaxing)
+ .debug_str     0x000025c1     0xa9ca ./src/main.o
+                               0xcee3 (size before relaxing)
+ .debug_str     0x0000cf8b     0x6a77 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+                               0xffdd (size before relaxing)
+ .debug_str     0x00013a02      0x187 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+                               0xa015 (size before relaxing)
+ .debug_str     0x00013b89     0x15b1 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                               0x9c8b (size before relaxing)
+ .debug_str     0x0001513a      0x760 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+                               0xb540 (size before relaxing)
+ .debug_str     0x0001589a      0x219 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                               0x92d6 (size before relaxing)
+ .debug_str     0x00015ab3       0x32 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+                               0x3e9c (size before relaxing)
+ .debug_str     0x00015ae5      0x214 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                               0x8560 (size before relaxing)
+ .debug_str     0x00015cf9      0x822 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+                               0xb41c (size before relaxing)
+ .debug_str     0x0001651b      0x409 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                               0x819a (size before relaxing)
+ .debug_str     0x00016924      0x4b4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+                               0x98f1 (size before relaxing)
+ .debug_str     0x00016dd8      0xbb5 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+                               0xa4a3 (size before relaxing)
+ .debug_str     0x0001798d      0x442 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+                               0x9a82 (size before relaxing)
+ .debug_str     0x00017dcf       0x47 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+                               0x93cd (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc175x_6x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/main.o
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .comment       0x00000000       0x71 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/main.o
+ .ARM.attributes
+                0x00000066       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .ARM.attributes
+                0x00000099       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .ARM.attributes
+                0x000000cc       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .ARM.attributes
+                0x000000ff       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .ARM.attributes
+                0x00000132       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .ARM.attributes
+                0x00000165       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .ARM.attributes
+                0x00000198       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .ARM.attributes
+                0x000001cb       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .ARM.attributes
+                0x000001fe       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x00000231       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .ARM.attributes
+                0x00000264       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .ARM.attributes
+                0x00000297       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .ARM.attributes
+                0x000002ca       0x33 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+ .ARM.attributes
+                0x000002fd       0x33 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+ .ARM.attributes
+                0x00000330       0x33 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x00000363       0x33 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strncpy.o)
+ .ARM.attributes
+                0x00000396       0x21 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(memcpy.o)
+
+.debug_frame    0x00000000     0x1608
+ .debug_frame   0x00000000      0x120 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x00000120       0x74 ./src/main.o
+ .debug_frame   0x00000194      0x33c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(board.o)
+ .debug_frame   0x000004d0       0x9c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_Board\Debug\libLib_Board.a(can_handler.o)
+ .debug_frame   0x0000056c      0x1e8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_frame   0x00000754      0x2b0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_can.o)
+ .debug_frame   0x00000a04      0x12c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_frame   0x00000b30       0x2c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_libcfg_default.o)
+ .debug_frame   0x00000b5c       0xfc E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_frame   0x00000c58      0x4f8 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_uart.o)
+ .debug_frame   0x00001150       0x38 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\Debug\libLib_CMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x00001188       0xc0 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_frame   0x00001248      0x2e4 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_frame   0x0000152c       0x70 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_frame   0x0000159c       0x6c E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)
+
+.debug_loc      0x00000000      0xe05
+ .debug_loc     0x00000000       0x5f E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(port.o)
+ .debug_loc     0x0000005f      0xb35 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(tasks.o)
+ .debug_loc     0x00000b94      0x22d E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(heap_2.o)
+ .debug_loc     0x00000dc1       0x44 E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\Debug\libLib_FreeRTOS.a(list.o)

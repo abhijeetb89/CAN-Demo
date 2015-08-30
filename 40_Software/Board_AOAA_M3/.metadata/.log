@@ -1,200 +1,41 @@
-!SESSION 2015-05-16 11:20:26.884 -----------------------------------------------
+!SESSION 2015-05-24 00:00:39.929 -----------------------------------------------
 eclipse.buildId=unknown
-java.version=1.7.0_67
+java.version=1.7.0_75
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86
 
-!ENTRY org.eclipse.ui 4 4 2015-05-16 11:23:02.191
+!ENTRY org.eclipse.ui 4 4 2015-05-24 00:00:47.351
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
 
-!ENTRY org.eclipse.ui 4 4 2015-05-16 11:23:02.191
+!ENTRY org.eclipse.ui 4 4 2015-05-24 00:00:47.351
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 11:25:29.168
-!MESSAGE Indexed 'Lib_CMSISv2p00_LPC17xx' (2 sources, 9 headers) in 0,52 sec: 1.211 declarations; 2.136 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:43.331
+!MESSAGE Indexed 'Lib_AOA' (3 sources, 74 headers) in 0,76 sec: 3.741 declarations; 4.868 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 11:27:46.993
-!MESSAGE Indexed 'Lib_CMSISv2p00_LPC17xx' (2 sources, 9 headers) in 0,18 sec: 1.211 declarations; 2.136 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:43.691
+!MESSAGE Indexed 'Lib_Board' (9 sources, 29 headers) in 0,34 sec: 3.161 declarations; 5.686 references; 4 unresolved inclusions; 0 syntax errors; 2 unresolved names (0,023 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 11:28:40.851
-!MESSAGE Indexed 'CAN' (0 sources, 0 headers) in 0,01 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:43.821
+!MESSAGE Indexed 'Lib_CMSISv2p00_LPC17xx' (2 sources, 9 headers) in 0,12 sec: 1.211 declarations; 2.136 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 11:51:50.016
-!MESSAGE Indexed 'Lib_MCU' (21 sources, 31 headers) in 1,19 sec: 4.028 declarations; 19.562 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:44.121
+!MESSAGE Indexed 'Lib_FreeRTOS' (7 sources, 27 headers) in 0,29 sec: 2.192 declarations; 4.816 references; 0 unresolved inclusions; 19 syntax errors; 3 unresolved names (0,043 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 11:53:41.932
-!MESSAGE Indexed 'Lib_Board' (9 sources, 29 headers) in 0,578 sec: 3.161 declarations; 5.686 references; 4 unresolved inclusions; 0 syntax errors; 2 unresolved names (0,023 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:44.711
+!MESSAGE Indexed 'Lib_MCU' (21 sources, 31 headers) in 0,58 sec: 4.028 declarations; 19.562 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for ALT+CTRL+I:
-Binding(ALT+CTRL+I,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
-		Open an include browser on the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a9f47,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(ALT+CTRL+I,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
-		Open an include browser on the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a9f47,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for ALT+SHIFT+R:
-Binding(ALT+SHIFT+R,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
-		Renames the selected element,
-		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17c691c,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(ALT+SHIFT+R,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
-		Renames the selected element,
-		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17c691c,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for F3:
-Binding(F3,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
-		Opens an editor on the selected element's declaration(s),
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d8bc63,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(F3,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
-		Opens an editor on the selected element's declaration(s),
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d8bc63,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
-		Open an element in an Editor,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1383213,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
-		Open an element in an Editor,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1383213,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for F4:
-Binding(F4,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
-		Open a type hierarchy on the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61eff5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(F4,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
-		Open a type hierarchy on the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61eff5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for CTRL+G:
-Binding(CTRL+G,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
-		Searches for declarations of the selected element in the workspace,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d0c119,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(CTRL+G,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
-		Searches for declarations of the selected element in the workspace,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d0c119,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for CTRL+SHIFT+G:
-Binding(CTRL+SHIFT+G,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
-		Searches for references to the selected element in the workspace,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@355451,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(CTRL+SHIFT+G,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
-		Searches for references to the selected element in the workspace,
-		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@355451,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for ALT+CTRL+H:
-Binding(ALT+CTRL+H,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
-		Opens the call hierarchy for the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1329f48,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(ALT+CTRL+H,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
-		Opens the call hierarchy for the selected element,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1329f48,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-16 11:56:33.823
-!MESSAGE A conflict occurred for CTRL+SHIFT+H:
-Binding(CTRL+SHIFT+H,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
-		Open a type in the type hierarchy view,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@774205,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cEditorScope,,,system)
-Binding(CTRL+SHIFT+H,
-	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
-		Open a type in the type hierarchy view,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@774205,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.cdt.ui.cViewScope,,,system)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:03:45.851
+!MESSAGE Indexed 'nxpUSBlib' (41 sources, 109 headers) in 1,13 sec: 6.204 declarations; 11.091 references; 0 unresolved inclusions; 131 syntax errors; 156 unresolved names (0,89 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2015-05-16 12:10:45.360
-!MESSAGE Indexed 'Lib_FreeRTOS' (7 sources, 27 headers) in 0,382 sec: 2.192 declarations; 4.816 references; 0 unresolved inclusions; 19 syntax errors; 3 unresolved names (0,043 %)
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:04:43.559
+!MESSAGE Indexed 'CAN' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2015-05-16 13:06:56.161
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:05:59.113
+!MESSAGE Indexed 'Lib_lwip' (56 sources, 86 headers) in 1,18 sec: 4.198 declarations; 15.971 references; 0 unresolved inclusions; 0 syntax errors; 88 unresolved names (0,43 %)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2015-05-24 00:12:47.164
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
@@ -233,7 +74,7 @@ org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget 
 	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
 	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
 	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:564)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
@@ -303,8 +144,8 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 88 more
 
-!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-05-16 13:06:56.163
-!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@1938a38 (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 60, y: 60, width: 1024, height: 768)
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-05-24 00:12:47.164
+!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@b56ef3 (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 30, y: 30, width: 1024, height: 768)
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
@@ -342,7 +183,7 @@ org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget 
 	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
 	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
 	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:564)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
@@ -411,6 +252,323 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 88 more
+!SESSION 2015-05-24 00:12:50.515 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
 
-!ENTRY org.eclipse.core.jobs 2 2 2015-05-16 13:06:56.696
-!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob$ProgressUpdateJob
+!ENTRY org.eclipse.ui 4 4 2015-05-24 00:12:55.197
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 00:12:55.207
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:15:50.245
+!MESSAGE Indexed 'CAN' (4 sources, 14 headers) in 0,31 sec: 1.667 declarations; 2.156 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0,026 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 00:46:32.922
+!MESSAGE Indexed 'CAN' (4 sources, 24 headers) in 0,23 sec: 1.806 declarations; 2.389 references; 1 unresolved inclusions; 11 syntax errors; 20 unresolved names (0,47 %)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10000 2015-05-24 01:01:24.562
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createEdit(HeaderFileReferenceAdjuster.java:249)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createEdit(HeaderFileReferenceAdjuster.java:229)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.addFileChange(HeaderFileReferenceAdjuster.java:204)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createChange(HeaderFileReferenceAdjuster.java:174)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileRenameParticipant.checkConditions(HeaderFileRenameParticipant.java:110)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:257)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:85)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:121)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10000 2015-05-24 01:01:56.664
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createEdit(HeaderFileReferenceAdjuster.java:249)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createEdit(HeaderFileReferenceAdjuster.java:229)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.addFileChange(HeaderFileReferenceAdjuster.java:204)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileReferenceAdjuster.createChange(HeaderFileReferenceAdjuster.java:174)
+	at org.eclipse.cdt.internal.ui.refactoring.rename.HeaderFileRenameParticipant.checkConditions(HeaderFileRenameParticipant.java:110)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:257)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:85)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:121)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 01:25:10.430
+!MESSAGE Indexed 'Lib_Board' (10 sources, 45 headers) in 0,444 sec: 3.516 declarations; 6.298 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 01:34:39.541
+!MESSAGE Indexed 'FreeRTOS_demo' (2 sources, 27 headers) in 0,325 sec: 2.377 declarations; 2.809 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-24 01:36:04.347
+!MESSAGE Indexed 'CAN' (4 sources, 26 headers) in 0,239 sec: 2.023 declarations; 2.558 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2015-05-24 15:03:14.017 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 15:03:23.729
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 15:03:23.732
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY com.crt.dsfdebug 4 0 2015-05-24 17:03:46.995
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:03:46.995
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:03:46.995
+!MESSAGE Unable to set an execution break - no resource available.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-05-24 17:05:53.554
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:235)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-05-24 17:05:53.554
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-05-24 17:05:53.726
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:05:53.726
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:05:53.726
+!MESSAGE Unable to set an execution break - no resource available.
+
+!ENTRY com.crt.dsfdebug 2 0 2015-05-24 17:05:58.662
+!MESSAGE Termi&nate/Disconnect All is not enabled.
+
+To terminate debug sessions, first select a debug session in the Debug View and then select Terminate again.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-05-24 17:06:08.701
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 3.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:235)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 3.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-05-24 17:06:08.701
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 3.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 3.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-05-24 17:06:08.883
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:06:08.883
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:06:08.883
+!MESSAGE Unable to set an execution break - no resource available.
+!SESSION 2015-05-24 17:06:54.519 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 17:07:01.872
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 17:07:01.872
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY com.crt.log 1 0 2015-05-24 17:07:27.117
+!MESSAGE Drivers loaded in 469 milliseconds
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-05-24 17:07:31.005
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:235)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-05-24 17:07:31.005
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-05-24 17:07:31.187
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:07:31.187
+!MESSAGE 15: Target error from Set break/watch
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-24 17:07:31.187
+!MESSAGE Unable to set an execution break - no resource available.
+!SESSION 2015-05-24 21:48:52.814 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 21:49:01.436
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-05-24 21:49:01.446
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-05-24 22:38:37.222
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error: Error reported by server (redlinkserv.exe):
+RedlinkAPI: Wire Ack Fault - target connected?
+Redlink Server has been terminated and will be restarted.
+Please restart your debug session.
+If the problem recurs, please power cycle your debug probe and restart LPCXpresso.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:235)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.Exception: Error: Error reported by server (redlinkserv.exe):
+RedlinkAPI: Wire Ack Fault - target connected?
+Redlink Server has been terminated and will be restarted.
+Please restart your debug session.
+If the problem recurs, please power cycle your debug probe and restart LPCXpresso.
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.internalTargetSelect(CRTTargetConnectionSequence.java:483)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.internalCommonStep(CRTTargetConnectionSequence.java:303)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.stepInitScriptWithProgress(CRTTargetConnectionSequence.java:637)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.stepInitScript(CRTTargetConnectionSequence.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.crt.dsfdebug.dsf.override.CRTReflectionSequence$ReflectionStep.execute(CRTReflectionSequence.java:97)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$2(Sequence.java:373)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:420)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:386)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 -1 2015-05-24 22:38:37.222
+!MESSAGE Error: Error reported by server (redlinkserv.exe):
+RedlinkAPI: Wire Ack Fault - target connected?
+Redlink Server has been terminated and will be restarted.
+Please restart your debug session.
+If the problem recurs, please power cycle your debug probe and restart LPCXpresso.
+!STACK 0
+java.lang.Exception: Error: Error reported by server (redlinkserv.exe):
+RedlinkAPI: Wire Ack Fault - target connected?
+Redlink Server has been terminated and will be restarted.
+Please restart your debug session.
+If the problem recurs, please power cycle your debug probe and restart LPCXpresso.
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.internalTargetSelect(CRTTargetConnectionSequence.java:483)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.internalCommonStep(CRTTargetConnectionSequence.java:303)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.stepInitScriptWithProgress(CRTTargetConnectionSequence.java:637)
+	at com.crt.dsfdebug.dsf.override.CRTTargetConnectionSequence.stepInitScript(CRTTargetConnectionSequence.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.crt.dsfdebug.dsf.override.CRTReflectionSequence$ReflectionStep.execute(CRTReflectionSequence.java:97)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$2(Sequence.java:373)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:420)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:386)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.crt.log 1 0 2015-05-24 22:39:40.760
+!MESSAGE Drivers loaded in 610 milliseconds
+
+!ENTRY com.crt.dsfdebug 4 0 2015-05-25 01:39:49.148
+!MESSAGE op EraseSector (0x0, 0x0, 0x3) status 0x159 - driver reported driver error - ONCHIP driver rc 268468224 (0x10008000)
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-05-25 01:39:49.148
+!MESSAGE op EraseSector (0x0, 0x0, 0x3) status 0x159 - driver reported driver error - ONCHIP driver rc 268468224 (0x10008000)
+!SESSION 2015-05-28 11:23:36.917 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-05-28 11:23:47.251
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2015-05-28 11:23:50.129
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-05-28 11:23:50.131
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator

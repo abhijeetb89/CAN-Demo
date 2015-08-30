@@ -1,4 +1,4 @@
-12:10:49 **** Build of configuration Debug for project Lib_FreeRTOS ****
+15:51:43 **** Incremental Build of configuration Debug for project Lib_FreeRTOS ****
 make -r all 
 Building file: ../portable/heap_2.c
 Invoking: MCU C Compiler
@@ -14,11 +14,6 @@ Building file: ../demo_code/basic_io.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"demo_code/basic_io.d" -MT"demo_code/basic_io.o" -MT"demo_code/basic_io.d" -o "demo_code/basic_io.o" "../demo_code/basic_io.c"
 Finished building: ../demo_code/basic_io.c
- 
-Building file: ../demo_code/consoleprint.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_CMSISv2p00_LPC17xx\inc" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\portable" -I"E:\Special Projects\CAN_HS-LS_GW\40_Software\Board_AOAA_M3\Lib_FreeRTOS\include" -O1 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"demo_code/consoleprint.d" -MT"demo_code/consoleprint.o" -MT"demo_code/consoleprint.d" -o "demo_code/consoleprint.o" "../demo_code/consoleprint.c"
-Finished building: ../demo_code/consoleprint.c
  
 Building file: ../list.c
 Invoking: MCU C Compiler
@@ -38,21 +33,21 @@ Finished building: ../tasks.c
 Building target: libLib_FreeRTOS.a
 Invoking: MCU Archiver
 arm-none-eabi-ar -r  "libLib_FreeRTOS.a"  ./portable/heap_2.o ./portable/port.o  ./demo_code/basic_io.o ./demo_code/consoleprint.o  ./list.o ./queue.o ./tasks.o   
-c:\nxp\LPCXpresso_7.5.0_254\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_FreeRTOS.a
+c:\nxp\LPCXpresso_7.7.2_379\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLib_FreeRTOS.a
 Finished building target: libLib_FreeRTOS.a
  
 make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size libLib_FreeRTOS.a ; # arm-none-eabi-objdump -h -S libLib_FreeRTOS.a >libLib_FreeRTOS.lss
    text	   data	    bss	    dec	    hex	filename
-    272	      4	   2072	   2348	    92c	heap_2.o (ex libLib_FreeRTOS.a)
+    284	      4	   5144	   5432	   1538	heap_2.o (ex libLib_FreeRTOS.a)
     304	      4	      0	    308	    134	port.o (ex libLib_FreeRTOS.a)
      88	      0	     52	    140	     8c	basic_io.o (ex libLib_FreeRTOS.a)
      20	      0	      0	     20	     14	consoleprint.o (ex libLib_FreeRTOS.a)
     156	      0	      0	    156	     9c	list.o (ex libLib_FreeRTOS.a)
-   1176	      0	      0	   1176	    498	queue.o (ex libLib_FreeRTOS.a)
-   2588	      0	    256	   2844	    b1c	tasks.o (ex libLib_FreeRTOS.a)
+   1184	      0	      0	   1184	    4a0	queue.o (ex libLib_FreeRTOS.a)
+   2648	      0	    256	   2904	    b58	tasks.o (ex libLib_FreeRTOS.a)
  
 
-12:10:51 Build Finished (took 1s.778ms)
+15:51:44 Build Finished (took 1s.342ms)
 

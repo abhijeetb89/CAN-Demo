@@ -1,0 +1,33 @@
+/*
+ * can_handler.c
+ *
+ *  Created on: 23.05.2015
+ *      Author: Abhijeet
+ */
+
+#include "can_handler.h"
+#include "can.h"
+
+void can_handler_init()
+{
+	CAN_Init( ((010)  << 12)  	 |		//BRP
+			  ((0011) << 8) 	 |	 	//SJW
+			  ((00)	  << 6)   	 |		//TSEG1
+			  ((000001)) 				//TSEG2
+			);			//set baud rate of 500kbps
+	CAN_ConfigureMessages();	//configure all CAN message buffers
+}
+
+void can_handler_send()
+{
+
+}
+void can_handler_receive()
+{
+
+}
+void CAN_IRQHandler()
+{
+
+}
+
