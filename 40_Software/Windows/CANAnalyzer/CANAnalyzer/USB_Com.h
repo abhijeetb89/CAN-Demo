@@ -33,6 +33,7 @@ namespace CANAnalyzer{
 		String^ USB_Com_Receive();
 		void USB_Com_Deinit();
 		void USB_Retrieve_Database();
+		static void LIBUSB_CALL transfer_cb_fn(libusb_transfer* transfer);
 		~USB_Com();
 	};
 }
