@@ -20,6 +20,8 @@ bool USB_Com::USB_Com_Init()
 	int cnt = 0;
 	int index = 0;
 	const int pid = 22352;	//pid of stm32f4 discovery HID
+	unsigned char buffer[11];
+	int rcv_length = 0;
 
 	libusb_context *context = NULL;
 	libusb_device **devs;
@@ -64,6 +66,18 @@ bool USB_Com::USB_Com_Init()
 						//USB_Com_Receive();
 						USB_Retrieve_Database();
 						return true;
+						/*
+						libusb_transfer *irq_transfer = libusb_alloc_transfer(0);
+
+						if (!irq_transfer)
+							return -ENOMEM;
+
+						libusb_fill_interrupt_transfer(irq_transfer, usb_device_handle, 0x81, buffer, sizeof(buffer), transfer_cb_fn, &rcv_length, 0);
+
+						if (libusb_submit_transfer(irq_transfer))
+							return 0;
+						*/
+						
 					}
 				}
 			}
@@ -188,4 +202,31 @@ void USB_Com::USB_Com_Deinit()
 {
 	libusb_close(usb_device_handle);
 	libusb_exit(NULL);
+}
+
+void LIBUSB_CALL USB_Com::transfer_cb_fn(libusb_transfer* transfer)
+{
+	int cnt;
+	unsigned char buffer[11];
+	int rcv_length = 0;
+	unsigned int received_CAN_Id;
+	String^ stringData = "";
+	String^ sender = "";
+
+	if (transfer->status != LIBUSB_TRANSFER_COMPLETED)
+	{
+		cout << "Incomplete transfer" << endl;
+	}
+	else
+	{
+		//get data
+
+	}
+	if (libusb_submit_transfer(transfer) < 0){
+		fprintf(stderr, "could not resubmit irq \n");
+		exit(1);
+	}
+
+
+
 }
